@@ -1,6 +1,10 @@
 <div class="product-card mb-30">
   <div class="product-card-thumb">
-    <span class="product-rating text-warning"><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star_half"></i><i class="material-icons star_border"></i></span>
+    <span class="product-rating text-warning">
+      <i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star_half"></i><i class="material-icons star_border"></i>
+      <!--   @rateUid@ -->
+      </span>
+    <span class="product-badge text-muted">Out of stock</span>
     <span class="product-badge text-danger">
      <!-- @newtipIcon@ -->
     <!--  @specIcon@ -->
@@ -8,10 +12,10 @@
     <a class="product-card-link" href="/shop/UID_@productUid@.html" title="@productName@""></a>
     <img src="@productImg@" alt="@productName@">
     <div class="product-card-buttons">
-      <button class="btn btn-white btn-sm btn-wishlist" data-uid="@productUid@" data-title="{Îòëîæèòü}" data-placement="top" data-toggle="tooltip">
+      <button class="btn btn-white btn-sm btn-wishlist" data-uid="@productUid@" data-title="{ÐžÑ‚Ð»Ð¾Ð¶Ð¸Ñ‚ÑŒ}" data-placement="top" data-toggle="tooltip">
         <i class="material-icons favorite_border"></i>
       </button>
-      <button class="btn btn-primary btn-sm @elementCartHide@" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="@productName@" data-num="1" data-uid="@productUid@" data-cart="@productSaleReady@" data-toast-message="óñïåøíî äîáàâëåí â êîðçèíó!">
+      <button class="btn btn-primary btn-sm @elementCartHide@" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="@productName@" data-num="1" data-uid="@productUid@" data-cart="@productSaleReady@" data-toast-message="ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½ Ð² ÐºÐ¾Ñ€Ð·Ð¸Ð½Ñƒ!">
         <span>@productSale@</span>
       </button>
     </div>
@@ -20,9 +24,10 @@
     <h3 class="product-card-title">
       <a href="/shop/UID_@productUid@.html" title="@productName@">@productName@</a>
     </h3>
-    <br>
     <h4 class="product-card-price">
-      <del>@productPriceRub@</del>@productPrice@ <span>@productValutaName@</span>
+      @productPriceRub@
+      @productPrice@
+      <span>@productValutaName@</span>
     </h4>
   </div>
 </div>

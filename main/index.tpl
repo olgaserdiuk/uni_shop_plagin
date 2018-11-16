@@ -21,6 +21,7 @@
   <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
   <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
   <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- Main Template Styles-->
   <link id="mainStyles" rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/styles.min.css">
   <!-- Customizer Styles-->
@@ -442,9 +443,10 @@
                 <!-- Fetured Products-->
                 <div class="col-xl-9 col-md-8">
                   <div class="row">
+                  @specMain@
                     <!-- Item-->
                     <div class="col-xl-3 col-lg-4 col-sm-6">
-                      @specMain@
+                      
         <!-- <div class="product-card mb-30">
           <div class="product-card-thumb"> <span class="product-badge text-danger">Sale</span><a class="product-card-link" href="shop-single.html"></a><img src="images/shop/th01.jpg" alt="Product">
             <div class="product-card-buttons">
@@ -602,11 +604,25 @@
 <!-- Site Footer-->
 <footer class="site-footer">
   <div class="column text-center">
-    <p class="text-sm mb-4">Need Support? Call<span class="text-primary">&nbsp;001 (917) 555-4836</span></p><a class="social-button sb-skype" href="index.html#" data-toggle="tooltip" data-placement="top" title="Skype"><i class="socicon-skype"></i></a><a class="social-button sb-facebook" href="index.html#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i></a><a class="social-button sb-google-plus" href="index.html#" data-toggle="tooltip" data-placement="top" title="Google +"><i class="socicon-googleplus"></i></a><a class="social-button sb-twitter" href="index.html#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram" href="index.html#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="socicon-instagram"></i></a>
-    <p class="text-xxs text-muted mb-0 mt-3">Р вЂњРІР‚С™Р вЂ™Р’В© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by Kass</p>
+    <p class="text-sm mb-4">Нужна помощь? Звоните: <a class="text-primary" href="tel: @telNum@">@telNum@</a></p>
+    <a class="social-button" href="/" data-toggle="tooltip" data-placement="top" title="">
+     <i class="">
+      <img src="images/vk-logo.png" alt="ВКонтакте"></i>
+    </a>
+    <a class="social-button sb-facebook" href="/" data-toggle="tooltip" data-placement="top" title="Facebook">
+      <i class="socicon-facebook"></i>
+    </a>
+    
+    <a class="social-button sb-twitter" href="/" data-toggle="tooltip" data-placement="top" title="Twitter">
+      <i class="socicon-twitter"></i>
+    </a>
+    <a class="social-button sb-instagram" href="/" data-toggle="tooltip" data-placement="top" title="Instagram">
+      <i class="socicon-instagram"></i>
+    </a>
+    <p class="text-xxs text-muted mb-0 mt-3">© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by Kass</p>
   </div>
   <div class="column">
-    <h3 class="widget-title text-center">Subscription<small>To receive latest offers and discounts from the shop.</small></h3>
+    <h3 class="widget-title text-center">Подпишись на рассылку<small>Получайте последние выгодные предложения и скидки нашего магазина</small></h3>
     <form class="subscribe-form input-group" action="http://rokaux.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;id=1194bb7544" method="post" target="_blank" novalidate><span class="input-group-btn">
       <button type="submit"><i class="material-icons send"></i></button></span>
       <input class="form-control" type="email" name="EMAIL" placeholder="Your e-mail">
@@ -617,7 +633,7 @@
     </form>
   </div>
   <div class="column">
-    <h3 class="widget-title text-center">Payment Methods<small>We support one of the following payment methods.</small></h3>
+    <h3 class="widget-title text-center">Способ оплаты<small>Мы поддерживаем один из возможных способов оплаты</small></h3>
     <div class="footer-cards"><img src="images/cards.png" alt="Payment Methods">
     </div>
   </div>

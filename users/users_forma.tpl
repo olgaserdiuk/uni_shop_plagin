@@ -37,7 +37,19 @@
 				<input class="form-control" type="password" placeholder="Подтвердите Пароль" required>
 			</div>
 			<button class="btn btn-primary btn-block" type="submit">Зарегистрироваться</button>
-			<p class="text-muted text-sm mt-4">или войти с помощью </p><a class="media-btn media-facebook" href="#"><i class="socicon-facebook"></i><span>Facebook</span></a><a class="media-btn media-google" href="#"><i class="socicon-googleplus"></i><span>Google+</span></a><a class="media-btn media-twitter" href="#"><i class="socicon-twitter"></i><span>Twitter</span></a>
+			<p class="text-muted text-sm mt-4">или войти с помощью </p>
+			<a class="media-btn media-facebook" href="/socauth/facebook/">
+				<i class="socicon-facebook"></i>
+				<span>Facebook</span>
+			</a>
+			<a class="media-btn media-twitter" href="/socauth/twitter/">
+				<i class="socicon-twitter"></i>
+				<span>Twitter</span>
+			</a>
+			<a class="media-btn media-google" href="/socauth/vk/">
+				<i><img src="images/vk-logo.png"></i>
+				<span>ВКонтакте</span>
+			</a>
 		</form>
 	</div>
 </div>

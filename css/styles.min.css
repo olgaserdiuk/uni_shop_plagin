@@ -2850,8 +2850,8 @@ button:focus {
     line-height: 46px
 }
 
-.media-btn > i.socicon-googleplus {
-    font-size: 18px
+.media-btn > i.socicon-vk {
+    font-size: 18px;
 }
 
 .media-btn > span {
@@ -2881,7 +2881,7 @@ button:focus {
 }
 
 .media-btn.media-google {
-    background-color: #dd4b39
+    background-color: #587EA3
 }
 
 .media-btn.media-twitter {
@@ -6658,14 +6658,15 @@ video {
     -ms-flex-pack: justify;
     flex-direction: column;
     justify-content: center;
-    padding-top: 24px
+    /* justify-content: space-between; */
+    padding-top: 4px
 }
 
 .product-card .product-card-title {
     margin: 0 auto;
-   /*  margin-bottom: 0; */
-    padding-right: 5px;
-    font-size: 16px;
+   /* margin-bottom: 0; */
+    /* padding-right: 5px; */
+    font-size: 14px;
     font-weight: normal
 }
 
@@ -6678,7 +6679,7 @@ video {
 }
 
 .product-card .product-card-price {
-    margin-bottom: 0;
+    margin: 0 auto;
     color: #606060;
     font-size: 16px;
     font-weight: normal
