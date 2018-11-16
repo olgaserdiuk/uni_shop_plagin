@@ -442,10 +442,10 @@
                 </div>
                 <!-- Fetured Products-->
                 <div class="col-xl-9 col-md-8">
-                  <div class="row">
                   @specMain@
+                  <div class="row">
                     <!-- Item-->
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                    <!-- <div class="col-xl-3 col-lg-4 col-sm-6"> -->
                       
         <!-- <div class="product-card mb-30">
           <div class="product-card-thumb"> <span class="product-badge text-danger">Sale</span><a class="product-card-link" href="shop-single.html"></a><img src="images/shop/th01.jpg" alt="Product">
@@ -461,7 +461,7 @@
               </h4>
           </div>
         </div> -->
-      </div>
+     <!--  </div> -->
       <!-- Item-->
       <!-- <div class="col-xl-3 col-lg-4 col-sm-6">
         <div class="product-card mb-30">
@@ -606,7 +606,7 @@
   <div class="column text-center">
     <p class="text-sm mb-4">Нужна помощь? Звоните: <a class="text-primary" href="tel: @telNum@">@telNum@</a></p>
     <a class="social-button" href="/" data-toggle="tooltip" data-placement="top" title="">
-     <i class="">
+     <i class="vk">
       <img src="images/vk-logo.png" alt="ВКонтакте"></i>
     </a>
     <a class="social-button sb-facebook" href="/" data-toggle="tooltip" data-placement="top" title="Facebook">

@@ -5739,6 +5739,10 @@ video {
     z-index: 5
 }
 
+.container-fluid > .text-center > a {
+    text-decoration: none;
+}
+
 .fw-section.bg-fixed, .fh-section.bg-fixed {
     background-attachment: fixed
 }

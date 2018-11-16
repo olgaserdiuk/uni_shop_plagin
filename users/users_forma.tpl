@@ -1,25 +1,25 @@
-
-
 <ul class="nav nav-tabs nav-justified" role="tablist">
-	<li class="nav-item" role="presentation"><a class="nav-link active" href="#login" data-toggle="tab" role="tab">Авторизация</a></li>
+	<li class="nav-item" role="presentation"><a class="nav-link active" href="#login" data-toggle="tab" role="tab">{Авторизация}</a>
+		<span id="usersError" class="hide">@usersError@</span>
+	</li>
 	<li class="nav-item" role="presentation"><a class="nav-link" href="#signup" data-toggle="tab" role="tab">Регистрация</a></li>
 </ul>
 <div class="tab-content">
 	<div class="tab-pane fade show active" id="login" role="tabpanel">
-		<form autocomplete="off" id="login-form">
+		<form autocomplete="off" id="login-form" method="post" name="user_forma">
 			<div class="form-group input-group">
-				<input class="form-control" type="email" placeholder="Email" required><span class="input-group-addon"><i class="material-icons mail"></i></span>
+				<input class="form-control" type="email" placeholder="Email" name="login" required><span class="input-group-addon"><i class="material-icons mail"></i></span>
 			</div>
 			<div class="form-group input-group">
-				<input class="form-control" type="password" placeholder="Пароль" required><span class="input-group-addon"><i class="material-icons lock"></i></span>
+				<input class="form-control" type="password" name="password" placeholder="Пароль" required><span class="input-group-addon"><i class="material-icons lock"></i></span>
 			</div>
 			<div class="custom-control custom-checkbox form-group">
-				<input class="custom-control-input" type="checkbox" id="logged" checked>
-				<label class="custom-control-label" for="logged">Запомнить</label>
+				<input class="custom-control-input" type="checkbox" id="logged" value="1" name="safe_users" @UserChecked@ checked>
+				<label class="custom-control-label" for="logged">{Запомнить}</label>
 				<span class="sendpass"><a href="/users/sendpassword.html">Забыли пароль?</a>
 				</span>
 			</div>
-			<button class="btn btn-primary btn-block" type="submit">Войти</button>
+			<button class="btn btn-primary btn-block" type="submit">{Войти}</button>
 		</form>
 	</div>
 	<div class="tab-pane fade" id="signup" role="tabpanel">

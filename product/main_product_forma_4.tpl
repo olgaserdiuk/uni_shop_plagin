@@ -1,17 +1,19 @@
-<div class="product-card mb-30">
-  <div class="product-card-thumb">
-    <span class="product-rating text-warning">
-      <i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star_half"></i><i class="material-icons star_border"></i>
-      <!--   @rateUid@ -->
+<!-- Item-->
+ <div class="col-xl-3 col-lg-4 col-sm-6">
+  <div class="product-card mb-30">
+    <div class="product-card-thumb">
+      <span class="product-rating text-warning">
+        <i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star_half"></i><i class="material-icons star_border"></i>
+        <!--   @rateUid@ -->
       </span>
-    <span class="product-badge text-muted">Out of stock</span>
-    <span class="product-badge text-danger">
-     <!-- @newtipIcon@ -->
-    <!--  @specIcon@ -->
-    Sale</span>
-    <a class="product-card-link" href="/shop/UID_@productUid@.html" title="@productName@""></a>
-    <img src="@productImg@" alt="@productName@">
-    <div class="product-card-buttons">
+      <span class="product-badge text-muted">Out of stock</span>
+      <span class="product-badge text-danger">
+       <!-- @newtipIcon@ -->
+       <!--  @specIcon@ -->
+     Sale</span>
+     <a class="product-card-link" href="/shop/UID_@productUid@.html" title="@productName@""></a>
+     <img src="@productImg@" alt="@productName@">
+     <div class="product-card-buttons">
       <button class="btn btn-white btn-sm btn-wishlist" data-uid="@productUid@" data-title="{Отложить}" data-placement="top" data-toggle="tooltip">
         <i class="material-icons favorite_border"></i>
       </button>
@@ -30,4 +32,5 @@
       <span>@productValutaName@</span>
     </h4>
   </div>
+</div>
 </div>
