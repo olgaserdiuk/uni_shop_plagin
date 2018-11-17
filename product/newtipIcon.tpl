@@ -1,1 +1,1 @@
-<span class="badge new">{Новинка}</span>
+<span class="product-badge text-muted">{Новинка}</span>

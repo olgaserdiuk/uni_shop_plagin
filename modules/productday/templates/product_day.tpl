@@ -1,9 +1,6 @@
 <div class="col-xs-12">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6">
-
-
-
             <div class="product-day-wrapper">
                 <h2 class="product-day-label">{Ограниченное предложение}</h2>
                 <h2 class="product-day-name">
@@ -44,6 +41,12 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
 <script >
 
     $().ready(function() {

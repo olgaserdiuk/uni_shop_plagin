@@ -11,6 +11,11 @@ ul, li {
 .house {
     padding-bottom: 5px;
 }
+
+.container .product-head > a {
+    text-decoration: none;
+}
+
 .sub-menu {
     display: none;
     position: absolute;
@@ -517,6 +522,10 @@ figure figcaption {
     padding-left: 30px
 }
 
+.new-items {
+    margin: 0 auto;
+}
+
 @media (max-width: 1200px) {
     .container-fluid {
         padding: 0 15px
@@ -770,7 +779,8 @@ figure figcaption {
 }
 
 .text-muted {
-    color: #999 !important
+    color: #999 !important;
+    bottom: 3px;
 }
 
 .text-primary {
@@ -790,7 +800,8 @@ figure figcaption {
 }
 
 .text-danger {
-    color: #ef0568 !important
+    color: #ef0568 !important;
+    top: 3px;
 }
 
 .text-gray-dark, .text-dark {
@@ -950,7 +961,7 @@ figure figcaption {
 }
 
 .padding-top-3x {
-    padding-top: 72px !important
+    padding-top: 40px !important
 }
 
 @media (max-width: 768px) {
@@ -1050,7 +1061,7 @@ figure figcaption {
 }
 
 .padding-bottom-3x {
-    padding-bottom: 72px !important
+    padding-bottom: 40px !important
 }
 
 @media (max-width: 768px) {
@@ -2900,6 +2911,14 @@ button:focus {
     vertical-align: middle
 }
 
+.vk {
+    background-image: url('images/vk-footer.png');
+}
+
+.vk:focus {
+    background-image: url('images/vk-footer-blue.png');
+}
+
 .social-button.shape-circle, .social-button.shape-rounded, .social-button.shape-square {
     width: 36px;
     height: 36px;
@@ -3449,6 +3468,12 @@ button:focus {
 .card-body .tab-content {
     padding: 0;
     border: 0
+}
+
+.card-body > h2 {
+    color: #ef0568;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .card.bg-primary .card-header {
@@ -5949,7 +5974,7 @@ video {
 }
 
 .navbar.navbar-sticky + * {
-    margin-top: 80px
+    margin-top: 55px
 }
 
 .site-branding {
@@ -6710,8 +6735,7 @@ video {
 .product-badge {
     display: block;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    left: 5px;
     height: 24px;
     padding: 0 14px;
     border-radius: 12px;

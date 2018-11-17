@@ -14,7 +14,6 @@
 
 
 <div class="col-md-3 col-sm-6 mb-30">
-    <!--<div class="col-xs-12 col-sm-6 col-md-4"> -->
     <a class="category-card flex-wrap text-center pt-0" href="/shop/CID_@catalogId@.html" title="@catalogName@">
         <div class="category-card-thumb w-100">
             <img src="@catalogIcon@" alt="@catalogName@" title="@catalogName@">
