@@ -47,9 +47,54 @@
 				<span>Twitter</span>
 			</a>
 			<a class="media-btn media-google" href="/socauth/vk/">
-				<i><img src="images/vk-logo.png"></i>
+				<i><img src="images/vk-blue.png"></i>
 				<span>ВКонтакте</span>
 			</a>
 		</form>
 	</div>
 </div>
+
+
+
+
+<!-- Модальное окно авторизации-->
+       <!--  <div class="modal fade bs-example-modal-sm" id="userModal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                          <h4 class="modal-title">Авторизация</h4>
+                          <span id="usersError" class="hide">@usersError@</span>
+                      </div>
+                      <form role="form" method="post" name="user_forma">
+                          <div class="modal-body">
+                              <div class="form-group">
+                                  <label>Email</label>
+                                  <input type="email" name="login" class="form-control" placeholder="Email..." required="">
+                                  <span class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                              </div>
+          
+                              <div class="form-group">
+                                  <label>Пароль</label>
+                                  <input type="password" name="password" class="form-control" placeholder="Пароль..." required="">
+                                  <span class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                              </div>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" value="1" name="safe_users" @UserChecked@> Запомнить
+                                  </label>
+                              </div>
+          
+                              @facebookAuth@ @twitterAuth@
+                          </div>
+                          <div class="modal-footer">
+                              <span class="pull-left"><a href="/users/sendpassword.html" class="btn btn-default">Забыли?</a>
+                              </span>
+                              <input type="hidden" value="1" name="user_enter">
+                              <button type="submit" class="btn btn-primary">Войти</button>
+                          </div>
+                      </form>   
+                  </div>
+              </div>
+          </div>  -->   
+        <!--/ Модальное окно авторизации end -->

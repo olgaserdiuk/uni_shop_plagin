@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- Registration Form Starts -->
+                    <!-- Registration Form end -->
                 </div>
             </div>
             <!-- Registration Block Ends -->
