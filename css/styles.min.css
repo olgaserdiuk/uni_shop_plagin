@@ -2861,10 +2861,6 @@ button:focus {
     line-height: 46px
 }
 
-.media-btn > i.socicon-vk {
-    font-size: 18px;
-}
-
 .media-btn > span {
     transition: opacity .2s;
     opacity: 1
@@ -2895,6 +2891,10 @@ button:focus {
     background-color: #587EA3
 }
 
+.media-btn.media-google>i>img {
+    margin-top: 10px;
+}
+
 .media-btn.media-twitter {
     background-color: #55acee
 }
@@ -2909,14 +2909,6 @@ button:focus {
     font-size: 14px;
     text-decoration: none;
     vertical-align: middle
-}
-
-.vk {
-    background-image: url('images/vk-footer.png');
-}
-
-.vk:focus {
-    background-image: url('images/vk-footer-blue.png');
 }
 
 .social-button.shape-circle, .social-button.shape-rounded, .social-button.shape-square {
@@ -3036,12 +3028,13 @@ button:focus {
     color: #4183c4 !important
 }
 
-.sb-google-plus {
-    font-size: 1.2em !important
+.fa-vk {
+    font-size: 1.2em !important;
+    color: #606060;
 }
 
-.sb-google-plus:hover, .sb-google-plus:focus {
-    color: #dd4b39 !important
+.fa-vk:hover, .fa-vk:focus {
+    color: #587EA3 !important
 }
 
 .sb-instagram:hover, .sb-instagram:focus {
@@ -3144,11 +3137,12 @@ button:focus {
     color: #00b488 !important
 }
 
-.sb-vk {
+
+.sb-google {
     font-size: 1.1em !important
 }
 
-.sb-vk:hover, .sb-vk:focus {
+.sb-google:hover, .sb-google:focus {
     color: #45668e !important
 }
 

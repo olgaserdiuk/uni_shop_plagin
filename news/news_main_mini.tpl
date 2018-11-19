@@ -1,17 +1,3 @@
-<!-- <div class="col-md-12 col-sm-12">
-    <div class="product-col mini-news-block">
-        <div class="caption">
-            <div class="description">
-                <em class="pull-right text-muted">@newsData@</em>
-                <h4><a href="/news/ID_@newsId@.html" title="@newsZag@">@newsZag@</a></h4>
-                @newsKratko@
-            </div>
-        </div>
-    </div>
-</div> -->
-
-
-
 <div class="col-md-4 col-sm-6 text-center mb-30">
 	<!-- <span class="d-block display-4 text-gray-light mb-4">
 		<i class="material-icons flight"></i>

@@ -21,7 +21,8 @@ special<!DOCTYPE html>
   <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
   <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
   <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  
   <!-- Main Template Styles-->
   <link id="mainStyles" rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/styles.min.css">
   <!-- Customizer Styles-->
@@ -30,7 +31,7 @@ special<!DOCTYPE html>
   <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/modernizr.min.js"></script>
 
   <!-- Bootstrap -->
-  <!-- <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body id="body" data-dir="@ShopDir@" data-path="@php echo $GLOBALS['PHPShopNav']->objNav['path']; php@" data-id="@php echo $GLOBALS['PHPShopNav']->objNav['id']; php@" data-token="@dadataToken@">
@@ -98,9 +99,11 @@ special<!DOCTYPE html>
        <div class="toolbar">
         <div class="inner"><a class="toolbar-toggle mobile-menu-toggle" href="#mobileMenu"><i class="material-icons menu"></i></a><a class="toolbar-toggle search-toggle" href="#search"><i class="material-icons search"></i></a><a class="toolbar-toggle" href="#account"><i class="material-icons person"></i></a>
           <a class="toolbar-toggle" href="#cart">
-            <i><span class="material-icons shopping_basket"></span>
-              <span class="count" id="num">@num@</span></i>
-            </a>
+            <i>
+              <span class="material-icons shopping_basket"></span>
+              <span class="count" id="num">@num@</span>
+            </i>
+          </a>
           </div>
           <!-- Toolbar Dropdown-->
           <div class="toolbar-dropdown">
@@ -403,21 +406,21 @@ special<!DOCTYPE html>
             <!-- <div class="text-center"><a class="btn btn-outline-secondary mb-0" href="shop-categories.html">All Categories</a></div> -->
           </section>
           <!-- Новинки Start -->
-            <section class="container-fluid padding-top-3x pb-5">
-              <h3 class="text-center mb-30"><a href="/newtip/" title="{Все новинки}">{Новинки}</a></h3>
-              <div class="row">
+          <section class="container-fluid padding-top-3x pb-5">
+            <h3 class="text-center mb-30"><a href="/newtip/" title="{Все новинки}">{Новинки}</a></h3>
+            <div class="row">
 
-                  <!-- Fetured Products-->
-                  <div class="col-xl-9 col-md-8 new-items">
-                    <!-- @productNumRow@ -->
-                    @specMainIcon@
+              <!-- Fetured Products-->
+              <div class="col-xl-9 col-md-8 new-items">
+                <!-- @productNumRow@ -->
+                @specMainIcon@
                   <!-- <div class="row">
                   </div> -->
                 </div>
               </div>
             </section>
             <!-- Новинки end  -->
-          
+
             <!-- Popular Brands Start-->
             <section class="fw-section bg-secondary padding-top-3x padding-bottom-3x">
               <div class="container">
@@ -429,45 +432,17 @@ special<!DOCTYPE html>
             </section>
             <!-- Popular Brands End-->
             <section class="container-fluid padding-top-3x pb-5">
-            <h3 class="text-center mb-30"><a href="/spec/" title="{Все спецпредложения}">{Спецпредложения}</a></h3>
-            <div class="row">
-              <!-- Special Offer-->
-              <div class="col-xl-3 col-md-4">
-                <div class="card pt-3 pb-2 mb-30">
-                  <div class="card-body text-center">
-                    <h2>ПРЕДЛОЖЕНИЕ ДНЯ!
-                      <!-- <span class='text-danger'>-30%</span> -->
-                    </h2>
-                    <a class="d-inline-block" href="/shop/UID_@productDayId@.html" title="@productDayName@">
-                      <!-- <a class="d-inline-block" href="/shop/UID_@productDayId@.html" title="@productDayName@"> -->
-                      <img src="images/home-icon-silhouette.png" alt="Special Offer">
-                    </a>
-                    <h3 class="h5 text-normal pt-3">
-                      <a class="navi-link" href="/shop/UID_@productDayId@.html" title="@productName@">@productDayName@</a></h3>
-                      <del class="lead text-muted mr-2">@productPriceRub@</del><span class="h4 text-danger">@productPrice@ @productValutaName@</span>
-                      <div class="mt-4">
-                        <div class="countdown countdown-alt" data-date-time="07/30/2018 12:00:00">
-                          <div class="item">
-                            <div class="days" id="timer-number-days">00</div><span class="days_ref" id="timer-text-days">{дней}</span>
-                          </div>
-                          <div class="item">
-                            <div class="hours" id="timer-number-hours">@productDayHourGood@</div><span class="hours_ref" id="timer-text-hours">{часов}</span>
-                          </div>
-                          <div class="item">
-                            <div class="minutes" id="timer-number-minutes">@productDayMinuteGood@</div><span class="minutes_ref" id="timer-text-minutes">{минут}</span>
-                          </div>
-                          <div class="item">
-                            <div class="seconds" id="timer-number-seconds">@productDaySecondGood@</div><span class="seconds_ref" id="timer-text-seconds">{секунд}</span>
-                          </div>
-                        </div>
+              <h3 class="text-center mb-30"><a href="/spec/" title="{Все спецпредложения}">{Спецпредложения}</a></h3>
+              <div class="row">
+                <!-- Special Offer-->
+                @productDay@
+                
                       </div>
                     </div>
-                  </div>
-                </div>
-                <!-- Fetured Products-->
-                <div class="col-xl-9 col-md-8">
-                  <!-- @productNumRow@ -->
-                  @specMain@
+                    <!-- Fetured Products-->
+                    <div class="col-xl-9 col-md-8">
+                      <!-- @productNumRow@ -->
+                      @specMain@
                   <!-- <div class="row">
                   </div> -->
                 </div>
@@ -493,26 +468,25 @@ special<!DOCTYPE html>
              <section class="container padding-top-3x padding-bottom-3x">
               <h2 class="product-head page-header text-center"><a href="/news/" title="{Все новости}">{Новости}</a></h2>
               <div class="row pt-2">
- @miniNews@
-              </div>
-            </section>
-            <!-- Site Footer-->
-            <footer class="site-footer">
-              <div class="column text-center">
-                <p class="text-sm mb-4">Нужна помощь? Звоните: <a class="text-primary" href="tel: @telNum@">@telNum@</a></p>
-                <a class="social-button" href="/" data-toggle="tooltip" data-placement="top" title="">
+               @miniNews@
+             </div>
+           </section>
+           <!-- Site Footer-->
+           <footer class="site-footer">
+            <div class="column text-center">
+              <p class="text-sm mb-4">Нужна помощь? Звоните: <a class="text-primary" href="tel: @telNum@">@telNum@</a></p>
+
+              <a class="social-button vk-ic" role="button"  href="/" data-toggle="tooltip" data-placement="top" title="ВКонтакте"><i class="fa fa-lg fa-vk"></i></a>
+                <!-- <a class="social-button" href="/" data-toggle="tooltip" data-placement="top" title="">
                  <i class="vk">
-                  <!-- <img class="vk" src="" alt="ВКонтакте"> --></i>
-                </a>
+                  <img class="vk" src="" alt="ВКонтакте"></i>
+                </a> -->
                 <a class="social-button sb-facebook" href="/" data-toggle="tooltip" data-placement="top" title="Facebook">
                   <i class="socicon-facebook"></i>
                 </a>
 
                 <a class="social-button sb-twitter" href="/" data-toggle="tooltip" data-placement="top" title="Twitter">
                   <i class="socicon-twitter"></i>
-                </a>
-                <a class="social-button sb-instagram" href="/" data-toggle="tooltip" data-placement="top" title="Instagram">
-                  <i class="socicon-instagram"></i>
                 </a>
                 <p class="text-xxs text-muted mb-0 mt-3">© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by Kass</p>
               </div>

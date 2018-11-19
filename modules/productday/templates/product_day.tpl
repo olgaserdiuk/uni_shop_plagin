@@ -1,70 +1,56 @@
-<div class="col-xs-12">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6">
-            <div class="product-day-wrapper">
-                <h2 class="product-day-label">{Ограниченное предложение}</h2>
-                <h2 class="product-day-name">
-                    <span class="product-day-name-top">{Новинка}</span>
-                    <a href="/shop/UID_@productDayId@.html" title="@productName@">@productDayName@</a>
-                    <span class="product-day-name-bottom">коллекция по сниженной цене!</span>
-                </h2>
-                <div class="product-day-img">
-                    <a href="/shop/UID_@productDayId@.html" title="@productDayName@"><img src="@productDayPicSmall@" alt="@productDayName@"></a>
-                </div>
-                <div class="product-day-timer">
-                    <div class="text-center">
-                        <h4 id="timer-number-days">0</h4>
-                        <small id="timer-text-days">{дней}</small>
-                    </div>
-                    <div class="text-center">
-                        <h4 id="timer-number-hours">@productDayHourGood@</h4>
-                        <small id="timer-text-hours">{часов}</small>
-                    </div>
-                    <div class="text-center">
-                        <h4 id="timer-number-minutes">@productDayMinuteGood@</h4>
-                        <small id="timer-text-minutes">{минут}</small>
-                    </div>
-                    <div class="text-center">
-                        <h4 id="timer-number-seconds">@productDaySecondGood@</h4>
-                        <small id="timer-text-seconds">{секунд}</small>
-                    </div>
-                </div>
-                <div class="product-day-button">
-                    <a class="btn btn-main" href="/shop/UID_@productDayId@.html" title="@productDayName@">{Перейти к товару}</a>
-                </div>
-            </div>
+<div class="col-xl-3 col-md-4">
+  <div class="card pt-3 pb-2 mb-30">
+    <div class="card-body text-center">
+      <h2>ПРЕДЛОЖЕНИЕ ДНЯ!
+        <!-- <span class='text-danger'>-30%</span> -->
+    </h2>
+    <a class="d-inline-block" href="/shop/UID_@productDayId@.html" title="@productDayName@">
+        <a class="d-inline-block" href="/shop/UID_@productDayId@.html" title="@productDayName@">
+          <img src="@productDayPicSmall@" alt="@productDayName@">
+      </a>
+      <h3 class="h5 text-normal pt-3">
+          <a class="navi-link" href="/shop/UID_@productDayId@.html" title="@productName@">@productDayName@</a>
+      </h3>
+      <del class="lead text-muted mr-2">@productDayPriceN@ @productDayCurrency@</del>
+      <span class="h4 text-danger">@productDayPrice@ @productDayCurrency@</span>
+      <div class="mt-4">
+        <!-- Timer start -->
+        <div class="countdown countdown-alt">
+          <div class="item">
+            <div class="days" id="timer-number-days">00</div><span class="days_ref" id="timer-text-days">{дней}</span>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 text-center">
-            <div class="sticker-wrapper">
-                <a href="/shop/UID_@productDayId@.html" title="@productDayName@"><img src="@productDayPicBigSource@" title="@productDayName@" alt="@productDayName@"></a>
-            </div>
+        <div class="item">
+            <div class="hours" id="timer-number-hours">@productDayHourGood@</div><span class="hours_ref" id="timer-text-hours">{часов}</span>
+        </div>
+        <div class="item">
+            <div class="minutes" id="timer-number-minutes">@productDayMinuteGood@</div><span class="minutes_ref" id="timer-text-minutes">{минут}</span>
+        </div>
+        <div class="item">
+            <div class="seconds" id="timer-number-seconds">@productDaySecondGood@</div><span class="seconds_ref" id="timer-text-seconds">{секунд}</span>
         </div>
     </div>
 </div>
-
-
-
-
-
-
+</div>
 <script >
 
     $().ready(function() {
-                            setInterval(function() {
-                    var h = $("#timer-number-hours").html();
-                        var m = $("#timer-number-minutes").html();
-                var s = parseInt($("#timer-number-seconds").html());
-                
-                    if (m != "") {
+        
+        setInterval(function() {
+
+            var h = $("#timer-number-hours").html();
+            var m = $("#timer-number-minutes").html();
+            var s = parseInt($("#timer-number-seconds").html());
+
+            if (m != "") {
                 if (s == 0) {
                     if (m == 0) {
-                if (h == 0) {
-                return;
+                        if (h == 0) {
+                            return;
                         }
-                h--;
+                        h--;
                         m = 60;
-        if (h < 10)
-    h = "0" + h;
+                        if (h < 10)
+                            h = "0" + h;
                     }
                     m--;
                     if (m < 10)
