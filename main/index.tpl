@@ -13,33 +13,33 @@ special<!DOCTYPE html>
   <!-- Mobile Specific Meta Tag-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- Favicon and Apple Icons-->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon.png"> 
+
+  <!-- Bootstrap -->
+  <!--  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet"> -->
+
   <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
   <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   
   <!-- Main Template Styles-->
   <link id="mainStyles" rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/styles.min.css">
-  <!-- Customizer Styles-->
-  <!--  <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@customizer/customizer.min.css"> -->
-  <!-- Modernizr-->
+
+ <!-- Modernizr-->
   <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/modernizr.min.js"></script>
 
-  <!-- Bootstrap -->
-  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Customizer Styles-->
+  <!--  <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@customizer/customizer.min.css"> -->
+ 
 </head>
 <body id="body" data-dir="@ShopDir@" data-path="@php echo $GLOBALS['PHPShopNav']->objNav['path']; php@" data-id="@php echo $GLOBALS['PHPShopNav']->objNav['id']; php@" data-token="@dadataToken@">
 
   <!-- Fonts -->
+  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.offcanvas.min.css" rel="stylesheet"> 
    <!--  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/font-awesome.min.css" rel="stylesheet">
    <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/iconfont.css" rel="stylesheet">
-   <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.offcanvas.min.css" rel="stylesheet"> -->
+   -->
 
 
 
@@ -71,7 +71,7 @@ special<!DOCTYPE html>
       <header class="navbar navbar-sticky">
         <!-- Theme -->
         <div class="site-branding">
-          <a class="site-logo hidden-xs-down" href="index.html">
+          <a class="site-logo hidden-xs-down" href="/">
             <img src="@logo@" alt="@name@" title="@name@" class="img-responsive">
           </a>
           <a class="site-logo logo-sm hidden-sm-up" href="index.html">

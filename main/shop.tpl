@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="windows-1251">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>@pageTitl@</title>
-        <meta name="description" content="@pageDesc@">
-        <meta name="keywords" content="@pageKeyw@">
-        <meta name="copyright" content="@pageReg@">
-        <meta content="General" name="rating">
-        <meta name="ROBOTS" content="ALL">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <link rel="icon" href="/favicon.ico"> 
+<head>
+    <meta charset="windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@pageTitl@</title>
+    <meta name="description" content="@pageDesc@">
+    <meta name="keywords" content="@pageKeyw@">
+    <meta name="copyright" content="@pageReg@">
+    <meta content="General" name="rating">
+    <meta name="ROBOTS" content="ALL">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon.png"> 
 
-        <!-- Bootstrap -->
-        <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <!--  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    </head>
-    <body id="body" data-dir="@ShopDir@" data-path="@php echo $GLOBALS['PHPShopNav']->objNav['path']; php@" data-id="@php echo $GLOBALS['PHPShopNav']->objNav['id']; php@" data-subpath="@php echo $GLOBALS['PHPShopNav']->objNav['name']; php@" data-token="@dadataToken@">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/font-awesome.min.css" rel="stylesheet">
-        <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/iconfont.css" rel="stylesheet">
-        <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.offcanvas.min.css" rel="stylesheet">
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/styles.min.css">
+
+    <!-- Modernizr-->
+    <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/modernizr.min.js"></script>
 
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+</head>
+<body id="body" data-dir="@ShopDir@" data-path="@php echo $GLOBALS['PHPShopNav']->objNav['path']; php@" data-id="@php echo $GLOBALS['PHPShopNav']->objNav['id']; php@" data-subpath="@php echo $GLOBALS['PHPShopNav']->objNav['name']; php@" data-token="@dadataToken@">
+
+    <!-- Fonts -->
+    <!--  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.offcanvas.min.css" rel="stylesheet"> -->
+   <!--  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/font-awesome.min.css" rel="stylesheet">
+   <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/iconfont.css" rel="stylesheet">
+-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+      <![endif]-->
 
-        <!-- jQuery -->
-        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery-1.11.0.min.js"></script>
+      <!-- jQuery -->
+      <!--  <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery-1.11.0.min.js"></script> -->
 
-        <!-- jQuery Plugins -->
+      <!-- jQuery Plugins -->
         <!-- <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/owl.carousel.min.css" rel="stylesheet">
         <script src="java/jqfunc.js"></script>
         <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/jquery.bxslider.css" rel="stylesheet">
@@ -44,138 +58,297 @@
         <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/suggestions.min.css" rel="stylesheet"> -->
 
         <!-- Template -->
-        <link href="@pageCss@" rel="stylesheet">
+        <!--  <link href="@pageCss@" rel="stylesheet"> -->
 
-        <!-- Theme -->
-        <link id="bootstrap_theme" data-name="@php echo $_SESSION['skin']; php@" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/@unishop_theme@.css" rel="stylesheet">
+        
 
-        <div class="navbar-offcanvas" id="js-bootstrap-offcanvas">
-            <ul class="offcanvas-list">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{Каталог} <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        @menuCatal@
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <i class="feather iconz-user"></i> {Кабинет }<span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="/users/order.html">{Отследить заказ}</a></li>
-                        <li><a href="/users/notice.html">{Уведомления о товарах}</a></li>
-                        <li><a href="/users/message.html">{Связь с менеджерами}</a></li>
-                        @php if($_SESSION['UsersId']) echo '<li><a href="?logout=true">{Выйти}</a></li>'; php@
-                    </ul>
-                </li>
-                @topMenu@
-                <li class=""><a href="/news/">{Новости}</a></li>
-                <li class=""><a href="/gbook/">{Отзывы}</a></li>
-                <li class=""><a href="/price/">{Прайс-лист}</a></li>
-                <li class=""><a href="/map/">{Карта сайта}</a></li>
-            </ul>
-        </div>
+
         <!-- Header Section Starts -->
-        <header>
-            <div class="header-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6 top-mobile-fix">
-                            <a class="header-top-link header-link-contact" href="mailto:@adminMail@"><i class="fa fa-envelope-o" aria-hidden="true"></i> @adminMail@</a>
-                            <a class="header-top-link header-link-contact" href="tel:@telNum@"><i class="fa fa-bell-o" aria-hidden="true"></i> @telNum@</a>
-                            <!-- Social Button -->
-                            <a class="social-button hidden-xs hidden-sm header-top-link" href="#" title="{Поделится в} Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="social-button hidden-xs hidden-sm header-top-link" href="#" title="{Поделится в} Контакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                            <a class="social-button hidden-xs hidden-sm header-top-link" href="#" title="{Поделится в} Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-                            <!--/ Social Button -->
+        <!-- Navbar-->
+        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <header class="navbar navbar-sticky">
+            <!-- Theme -->
+            <div class="site-branding">
+              <a class="site-logo hidden-xs-down" href="/">
+                <img src="@logo@" alt="@name@" title="@name@" class="img-responsive">
+            </a>
+            <a class="site-logo logo-sm hidden-sm-up" href="index.html">
+                <img src="@logo@" alt="@name@" title="@name@" class="img-responsive">
+            </a>
+        </div>
+        <!-- Main Navigation-->
+        <nav class="site-menu" id="js-bootstrap-offcanvas">
+          <ul>
+            <li class="">
+              <a href="/"><span class="tab-label"><img class="house" src="images/home-icon-silhouette.png"></span></a>
+          </li>
+          <li class="">
+              <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span>{Каталог}</span></a>
+              <ul class="sub-menu" role="menu">
+                 @leftCatal@
+             </ul>
+         </li>
+         @topBrands@
+         @topMenu@
+     </ul>
+     <!-- </li> -->
+ </nav>
+ <!-- Toolbar-->
+ <div class="toolbar">
+    <div class="inner"><a class="toolbar-toggle mobile-menu-toggle" href="#mobileMenu"><i class="material-icons menu"></i></a><a class="toolbar-toggle search-toggle" href="#search"><i class="material-icons search"></i></a><a class="toolbar-toggle" href="#account"><i class="material-icons person"></i></a>
+      <a class="toolbar-toggle" href="#cart">
+        <i>
+          <span class="material-icons shopping_basket"></span>
+          <span class="count" id="num">@num@</span>
+      </i>
+  </a>
+</div>
+<!-- Toolbar Dropdown-->
+<div class="toolbar-dropdown">
+    <!-- Mobile Menu Section-->
+    <div class="toolbar-section" id="mobileMenu">
+      <!-- Search Box-->
+      <form class="input-group form-group" method="get"><span class="input-group-btn">
+        <button type="submit"><i class="material-icons search"></i></button></span>
+        <input class="form-control" type="search" placeholder="Search website">
+    </form>
+    <!-- Slideable (Mobile) Menu-->
+    <nav class="slideable-menu mt-4">
+        <ul class="menu">
+          <li class="has-children active"><span><a href="index.html"><span>Home</span></a><span class="sub-menu-toggle"></span></span>
+            <ul class="slideable-submenu">
+              <li class="active"><a href="index.html">Hero Slider</a></li>
+              <li><a href="home-featured-categories.html">Categories Grid</a></li>
+          </ul>
+      </li>
+      <li class="has-children"><span><a href="shop-boxed-ls.html"><span>Shop</span></a><span class="sub-menu-toggle"></span></span>
+        <ul class="slideable-submenu">
+          <li><a href="shop-categories.html">Shop Categories</a></li>
+          <li class="has-children"><span><a href="shop-boxed-ls.html"><span>Shop Layout</span></a><span class="sub-menu-toggle"></span></span>
+            <ul class="slideable-submenu">
+              <li><a href="shop-boxed-ls.html">Boxed Left Sidebar</a></li>
+              <li><a href="shop-boxed-rs.html">Boxed Right Sidebar</a></li>
+              <li><a href="shop-boxed-ft.html">Boxed Filters Top</a></li>
+              <li><a href="shop-full-ls.html">Full Width Left Sidebar</a></li>
+              <li><a href="shop-full-rs.html">Full Width Right Sidebar</a></li>
+              <li><a href="shop-full-ft.html">Full Width Filters Top</a></li>
+          </ul>
+      </li>
+      <li><a href="shop-single.html">Single Product</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li class="has-children"><span><a href="checkout-address.html"><span>Checkout</span></a><span class="sub-menu-toggle"></span></span>
+        <ul class="slideable-submenu">
+          <li><a href="checkout-address.html">Address</a></li>
+          <li><a href="checkout-shipping.html">Shipping</a></li>
+          <li><a href="checkout-payment.html">Payment</a></li>
+          <li><a href="checkout-review.html">Review</a></li>
+          <li><a href="checkout-complete.html">Complete</a></li>
+      </ul>
+  </li>
+</ul>
+</li>
+<li class="has-children"><span><a href="index.html#">Categories</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li class="has-children"><span><a href="index.html#">Desks &amp; Benching</a><span class="sub-menu-toggle"></span></span>
+        <ul class="slideable-submenu">
+          <li><a href="index.html#">Executive Desks</a></li>
+          <li><a href="index.html#">Standing Desks</a></li>
+          <li><a href="index.html#">Benching Desks</a></li>
+          <li><a href="index.html#">Single Desks</a></li>
+          <li><a href="index.html#">View All</a></li>
+      </ul>
+  </li>
+  <li class="has-children"><span><a href="index.html#">Office Furniture</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="index.html#">File Cabinets</a></li>
+      <li><a href="index.html#">Office Chairs</a></li>
+      <li><a href="index.html#">Adjustable Tables</a></li>
+      <li><a href="index.html#">Stools</a></li>
+      <li><a href="index.html#">View All</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="index.html#">Lounge Seating</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="index.html#">Benches</a></li>
+      <li><a href="index.html#">Chairs</a></li>
+      <li><a href="index.html#">Pillows</a></li>
+      <li><a href="index.html#">Sofas</a></li>
+      <li><a href="index.html#">View All</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="index.html#">Storage Units</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="index.html#">Bookcases</a></li>
+      <li><a href="index.html#">Box Seats &amp; Benches</a></li>
+      <li><a href="index.html#">Credenza</a></li>
+      <li><a href="index.html#">View All</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="index.html#">Lighting</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="index.html#">Ceiling Lights</a></li>
+      <li><a href="index.html#">Kitchen Lights</a></li>
+      <li><a href="index.html#">Wall Lights</a></li>
+      <li><a href="index.html#">Lamps</a></li>
+      <li><a href="index.html#">View All</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="index.html#">Furniture Accessories</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="index.html#">Power Management</a></li>
+      <li><a href="index.html#">Desk Add Ons</a></li>
+      <li><a href="index.html#">Lamps</a></li>
+      <li><a href="index.html#">Monitor Arms</a></li>
+      <li><a href="index.html#">Desk Risers</a></li>
+      <li><a href="index.html#">View All</a></li>9
+  </ul>
+</li>
+</ul>
+</li>
+<li class="has-children"><span><a href="account-orders.html"><span>Account</span></a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="account-orders.html">Orders List</a></li>
+      <li><a href="account-wishlist.html">Wishlist</a></li>
+      <li><a href="account-profile.html">Profile Page</a></li>
+      <li><a href="account-address.html">Contact / Shipping Address</a></li>
+      <li><a href="http://themes.rokaux.com/unishop/v3.0/template-2/account-open-ticket.html">Open Ticket</a></li>
+      <li><a href="account-tickets.html">My Tickets</a></li>
+      <li><a href="account-single-ticket.html">Single Ticket</a></li>
+      <li><a href="account-password-recovery.html">Password Recovery</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="blog.html"><span>Blog List</span></a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="blog.html">Blog List</a></li>
+      <li><a href="blog-single.html">Single Post</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="index.html#">Pages</a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="faq.html">Help / FAQ</a></li>
+      <li><a href="order-tracking.html">Order Tracking</a></li>
+      <li><a href="404.html">404 Not Found</a></li>
+      <li><a href="coming-soon.html">Coming Soon</a></li>
+      <li><a class="text-danger" href="docs/dev-setup.html">Documentation</a></li>
+  </ul>
+</li>
+<li class="has-children"><span><a href="components/accordion.html"><span>Components</span></a><span class="sub-menu-toggle"></span></span>
+    <ul class="slideable-submenu">
+      <li><a href="components/accordion.html">Accordion</a></li>
+      <li><a href="components/alerts.html">Alerts</a></li>
+      <li><a href="components/buttons.html">Buttons</a></li>
+      <li><a href="components/cards.html">Cards</a></li>
+      <li><a href="components/carousel.html">Carousel</a></li>
+      <li><a href="components/countdown.html">Countdown</a></li>
+      <li><a href="components/forms.html">Forms</a></li>
+      <li><a href="components/gallery.html">Gallery</a></li>
+      <li><a href="components/google-maps.html">Google Maps</a></li>
+      <li><a href="components/images.html">Images &amp; Figures</a></li>
+      <li><a href="components/list-group.html">List Group</a></li>
+      <li><a href="components/market-social-buttons.html">Market &amp; Social Buttons</a></li>
+      <li><a href="components/media.html">Media Object</a></li>
+      <li><a href="components/modal.html">Modal</a></li>
+      <li><a href="components/pagination.html">Pagination</a></li>
+      <li><a href="components/pills.html">Pills</a></li>
+      <li><a href="components/progress-bars.html">Progress Bars</a></li>
+      <li><a href="components/shop-items.html">Shop Items</a></li>
+      <li><a href="components/steps.html">Steps</a></li>
+      <li><a href="components/tables.html">Tables</a></li>
+      <li><a href="components/tabs.html">Tabs</a></li>
+      <li><a href="components/team.html">Team</a></li>
+      <li><a href="components/toasts.html">Toast Notifications</a></li>
+      <li><a href="components/tooltips-popovers.html">Tooltips &amp; Popovers</a></li>
+      <li><a href="components/typography.html">Typography</a></li>
+      <li><a href="components/video-player.html">Video Player</a></li>
+      <li><a href="components/widgets.html">Widgets</a></li>
+  </ul>
+</li>
+</ul>
+</nav>
+</div>
+<!-- Search Section-->
+<div class="toolbar-section" id="search">
+  <form class="search-form mb-2" method="get">
+    <input type="search" placeholder="Поиск"><i class="material-icons search"></i>
+</form>
+<!-- Products-->
+<div class="widget widget-featured-products">
+    <h3 class="widget-title"><b>Found in Products</b></h3>
+    <!-- Entry-->
+    <div class="entry">
+      <div class="entry-thumb"><a href="shop-single.html"><img src="images/shop/widget/01.png" alt="Product"></a></div>
+      <div class="entry-content">
+        <h4 class="entry-title"><a href="shop-single.html">Max <span class='text-highlighted'>Task Chair</span></a></h4><span class="entry-meta">$299.00</span>
+    </div>
+</div>
+<!-- Entry-->
+<div class="entry">
+  <div class="entry-thumb"><a href="shop-single.html"><img src="images/shop/widget/02.png" alt="Product"></a></div>
+  <div class="entry-content">
+    <h4 class="entry-title"><a href="shop-single.html"><span class='text-highlighted'>Drawer</span> File Cabinet</a></h4><span class="entry-meta">$265.00</span>
+</div>
+</div>
+<!-- Entry-->
+<div class="entry">
+  <div class="entry-thumb"><a href="shop-single.html"><img src="images/shop/widget/03.png" alt="Product"></a></div>
+  <div class="entry-content">
+    <h4 class="entry-title"><a href="shop-single.html">Campfire <span class='text-highlighted'>Paper</span> Table</a></h4><span class="entry-meta">$570.00</span>
+</div>
+</div>
+</div>
+<!-- Blog-->
+<div class="widget widget-featured-products">
+    <h3 class="widget-title"><b>Found in Blog</b></h3>
+    <!-- Entry-->
+    <div class="entry">
+      <div class="entry-thumb"><a href="blog-single.html"><img src="images/blog/widget/01.jpg" alt="Post"></a></div>
+      <div class="entry-content">
+        <h4 class="entry-title"><a href="blog-single.html"><span class='text-highlighted'>Modern</span> Working Space</a></h4><span class="entry-meta">May 09</span>
+    </div>
+</div>
+<!-- Entry-->
+<div class="entry">
+  <div class="entry-thumb"><a href="blog-single.html"><img src="images/blog/widget/02.jpg" alt="Post"></a></div>
+  <div class="entry-content">
+    <h4 class="entry-title"><a href="blog-single.html">Interior <span class='text-highlighted'>Design</span> Tricks</a></h4><span class="entry-meta">April 18</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Account Section-->
+<div class="toolbar-section" id="account">
+  @usersDisp@
+</div>
+<!-- Shopping Cart Section-->
+@visualcart@
+</div>
+</div>
+</header>
+<!-- Header Section Ends -->
+<!-- Page Title-->
+<div class="page-title">
+  <div class="container">
+    <h1>Корзина</h1>
 
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 top-mobile-fix">
-                            <div class="header-wishlist">
-                                <a class="header-link-color link" href="/compare/">
-                                    <span class="hidden-sm hidden-xs">
-                                        <i class="fa fa-bar-chart-o"></i> {Сравнить} (<span id="numcompare">@numcompare@</span>)<span id="wishlist-total" ></span>
-                                </span>
-                                </a>
-                                @wishlist@
-                            </div>
-                            <div class="header-top-right">
-                                @returncall@
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-bottom">
-                <div class="container header-container-fix">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <form id="search_form" action="/search/" role="search" method="post" class="header-search-form">
-                                <input id="search" class="form-control input-lg" name="words" maxlength="50"  placeholder="{Поиск}..." required="" type="search" data-trigger="manual" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true"  data-content="">
-                                <button class="" type="submit">
-                                    <i class="feather iconz-search"></i>
-                                </button>
-                                <i class="search-close feather iconz-x"></i>
-                            </form>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2 bottom-mobile-fix">
-                            <div id="logo">
-                                <a href="/">
-                                    <img src="@logo@" alt="@name@" title="@name@" class="img-responsive" />
-                                </a>
-                            </div>
-                            <button type="button" class="hidden-md hidden-lg navbar-toggle feather iconz-menu modile-cat-open offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
-                            </button>
-                        </div>
-                        <div class="col-md-6 col-lg-7 hidden-xs hidden-sm header-menu-wrapper">
-                            <div class="row">
-                                <ul class="nav navbar-nav main-navbar-top">
-                                    <li class="catalog-menu">
-                                        <a id="nav-catalog-dropdown-link" class="nav-catalog-dropdown-link" aria-expanded="false">{Каталог}
-                                        </a>
-                                        <ul class="main-navbar-list-catalog-wrapper">
-                                            @leftCatal@
-                                        </ul>
-                                    </li>
-                                    @topBrands@
-                                    @topMenu@
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-7 col-xs-12 col-md-4 col-lg-3 hidden-xs hidden-sm bottom-mobile-fix">
-                            <div id="cart" class="btn-group header-color">
-                                <a id="cartlink"  class="btn btn-block btn-lg dropdown-toggle" data-trigger="click" data-container="body"  data-placement="bottom" data-html="true" href="/order/" data-content='@visualcart@'>
-                                    <span id="cart-total">
-                                        <i class="feather iconz-trash"></i>
-                                        <span class="count" id="num">@num@</span>
-                                        <span class="sub-total">
-                                            <span id="sum"> @sum@</span> <span class="rubznak">@productValutaName@</span>
-                                        </span>
-                                    </span>
-                                </a>
-                                @visualcart@
-                            </div>
-                            <div class="header-account">
-                                @usersDisp@
-                            </div>
-                            <div class="search-open-button">
-                                <i class="feather iconz-search"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="header-area" class="header-area-background-block"></div>
-            </div>
-        </header>
-        <!-- Header Section Ends -->
-        <div class="secondary-nav">
+    @breadCrumbs@
+
+</div>
+</div>
+
+
+        <!-- <div class="secondary-nav">
             <div class="container">
                 <h1 class="shop-page-main-title"></h1>
                 <ol class="breadcrumb">
                     @breadCrumbs@
                 </ol>
             </div>
-        </div>
+        </div> -->
+
+
+
         <!-- Main Container Starts -->
         <div class="middle-content shop-page  main-color-text">
             <div class="container">
@@ -242,222 +415,197 @@
                             @nowBuy@
                         </div>
                     </div>
-                    <!-- Primary Content Ends -->
+                    <!--  Primary Content Ends -->
                 </div>
             </div>
         </div>
         <!-- Main Container Ends -->
 
-        <!-- toTop -->
-        <div class="visible-lg visible-md">
-            <a href="#" id="toTop"><span id="toTopHover"></span>{Наверх}</a>
-        </div>
-        <!--/ toTop -->
+        <!-- Back To Top Button--><a class="scroll-to-top-btn" href="index.html#"><i class="material-icons trending_flat"></i></a>
 
         <!-- Footer Section Starts -->
-        <footer class="visible-sm visible-md visible-lg" id="footer-area">
-            <!-- Footer Links Starts -->
-            <div class="footer-links">
-                <!-- Container Starts -->
-                <div class="container">
-                    <!-- Contact Us Starts -->
-                    <div class="col-md-3 col-sm-8 col-xs-12">
-                        <h5>{Контакты}</h5>
-                        <ul>
-                            <li class="footer-map">@streetAddress@</li>
-                            <li class="footer-email"><a href="mailto:@adminMail@"><i class="fa fa-envelope-o"></i> @adminMail@</a></li>
-                            <li class="footer-map">
-                                <h4 class="lead">
-                                    <a href="tel:@telNum@">Тел: @telNum@</a>
-                                </h4>
-                            </li>
-                        </ul>
-                        <div class="footer-social">
-                          
-                            <!-- Social Button -->
-                            <a class="social-button hidden-xs hidden-sm header-top-link" href="#" title="{Поделится в} Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a class="social-button hidden-xs hidden-sm header-top-link" href="#" title="{Поделится в} Контакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                            <a class="social-button hidden-xs hidden-sm header-top-link" href="#" title="{Поделится в} Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-                            <!--/ Social Button -->
-                        </div>
-                    </div>
-                    <!-- Contact Us Ends -->
-                    <!-- My Account Links Starts -->
-                    <div class="col-md-3 col-sm-4 col-xs-12">
-                        <h5>{Личный кабинет}</h5>
-                        <ul>
-                            <li><a href="/users/order.html">{Отследить заказ}</a></li>
-                            <li><a href="/users/notice.html">{Уведомления о товарах}</a></li>
-                            <li><a href="/users/message.html">{Связь с менеджерами}</a></li>
-                            @php if($_SESSION['UsersId']) echo '<li><a href="?logout=true">{Выйти}</a></li>'; php@
-                        </ul>
-                    </div>
-                    <!-- My Account Links Ends -->
-                    <!-- Customer Service Links Starts -->
-                    <div class="col-md-3 col-sm-4 col-xs-12">
-                        <h5>{Навигация}</h5>
-                        <ul>
-                            <li><a href="/price/" title="{Прайс-лист}">{Прайс-лист}</a></li>
-                            <li><a href="/news/" title="{Новости}">{Новости}</a></li>
-                            <li><a href="/gbook/" title="{Отзывы}">{Отзывы}</a></li>
-                            <li><a href="/map/" title="{Карта сайта}">{Карта сайта}</a></li>
-                            <li><a href="/forma/" title="{Форма связи}">{Форма связи}</a></li>
-                        </ul>
-                    </div>
-                    <!-- Customer Service Links Ends -->
-                    <!-- Information Links Starts -->
-                    <div class="col-md-3 col-sm-4 col-xs-12">
-                        <h5>{Информация}</h5>
-                        <ul>
-                            @topMenu@
-                            <li><a href="/page/politika_konfidencialnosti.html" title="{Политика конфиденциальности}">{Политика конфиденциальности}</a></li>
-                        </ul>
-                    </div>
-                    <!-- Information Links Ends -->
-                    <div class="col-xs-12">
-                        <div class="footer-layer"></div>
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="footer-payment-methods">
-                                    <img src="images/payment_methods.png">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <form action="/search/" class="news-subscription-form">
-                                    <div class="clearfix">
-                                        <div class="main-page-subscrition-form-input">
-                                            <input class="form-control" name="words" maxlength="50" id=""  placeholder="{Поиск}..." required="" type="search" data-trigger="manual" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true"  data-content="">
-                                        </div>
-                                        <button type="submit"><i class="feather iconz-search"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Container Ends -->
+        <footer class="site-footer">
+            <div class="column text-center">
+              <h3>{Контакты}</h3>
+              <ul>
+                <li class="footer-map">@streetAddress@</li>
+                <li class="footer-email"><a href="mailto:@adminMail@"><i class="fa fa-envelope-o"></i> @adminMail@</a></li>
+                <li class="footer-map">
+                    <h4 class="lead">
+                        <a href="tel:@telNum@">@telNum@</a>
+                    </h4>
+                </li>
+            </ul>
+
+            <a class="social-button vk-ic" role="button"  href="#" data-toggle="tooltip" data-placement="top" title="Поделиться ВКонтакте"><i class="fa fa-lg fa-vk"></i></a>
+            <a class="social-button sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="socicon-facebook"></i>
+          </a>
+          <a class="social-button sb-twitter" href="/" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="socicon-twitter"></i>
+          </a>
+          <p class="text-xxs text-muted mb-0 mt-3">© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by Kass</p>
+      </div>
+      <div class="column text-center">
+        <h3 class="widget-title text-center">{Личный кабинет}</h3>
+        <ul>
+            <li><a href="/users/order.html">{Отследить заказ}</a></li>
+            <li><a href="/users/notice.html">{Уведомления о товарах}</a></li>
+            <li><a href="/users/message.html">{Связь с менеджерами}</a></li>
+            @php if($_SESSION['UsersId']) echo '<li><a href="?logout=true">{Выйти}</a></li>'; php@
+        </ul>
+    </div>
+<div class="column text-center">
+    <h3 class="widget-title text-center">{Информация}</h3>
+    <ul>
+                    @topMenu@
+                    <li><a href="/page/politika_konfidencialnosti.html" title="{Политика конфиденциальности}">{Политика конфиденциальности}</a></li>
+                </ul>
+</div>
+<div class="column text-center">
+        <h3 class="widget-title text-center">{Навигация}</h3>
+        <ul>
+            <li><a href="/price/" title="{Прайс-лист}">{Прайс-лист}</a></li>
+            <li><a href="/news/" title="{Новости}">{Новости}</a></li>
+            <li><a href="/gbook/" title="{Отзывы}">{Отзывы}</a></li>
+            <li><a href="/map/" title="{Карта сайта}">{Карта сайта}</a></li>
+            <li><a href="/forma/" title="{Форма связи}">{Форма связи}</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<!-- Copyright Area Starts -->
+<div class="copyright">
+    <!-- Container Starts -->
+    <div class="container">
+        <div class="pull-right">@button@</div>
+        <p itemscope itemtype="http://schema.org/Organization">© <span itemprop="name">@company@</span> @year@, {Тел}: <span itemprop="telephone">@telNum@</span>, <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{Адрес}: <span itemprop="streetAddress">@streetAddress@</span></span><span itemprop="email" class="hide">@adminMail@</span></p>
+    </div>
+    <!-- Container Ends -->
+</div>
+<!-- Copyright Area Ends -->
+</footer>
+<!-- Footer Section Ends -->
+
+@editor@
+
+<!-- Fixed mobile bar -->
+<div class="bar-padding-fix visible-xs visible-sm"> </div>
+<nav class="navbar navbar-default navbar-fixed-bottom bar bar-tab visible-xs visible-sm" role="navigation">
+    <a class="tab-item" href="/">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">{Домой}</span>
+    </a>
+    <a class="tab-item @user_active@" @user_link@ data-target="#userModal">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">{Кабинет}</span>
+    </a>
+    <a class="tab-item @cart_active@" href="/order/" id="bar-cart">
+        <span class="icon icon-download"></span> <span class="badge badge-positive" id="mobilnum">@cart_active_num@</span>
+        <span class="tab-label">{Корзина}</span>
+    </a>
+    <a class="tab-item" href="#" data-toggle="modal" data-target="#searchModal">
+        <span class="icon icon-search"></span>
+        <span class="tab-label">{Поиск}</span>
+    </a>
+</nav>
+<!--/ Fixed mobile bar -->
+
+<!-- Notification -->
+<div id="notification" class="success-notification" style="display: none;">
+    <div  class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+        <span class="notification-alert"> </span>
+    </div>
+</div>
+<!--/ Notification -->
+
+<!-- Модальное окно авторизации-->
+<div class="modal fade bs-example-modal-sm" id="userModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">{Авторизация}</h4>
+                <span id="usersError" class="hide">@usersError@</span>
             </div>
-            <!-- Footer Links Ends -->
-            <!-- Copyright Area Starts -->
-            <div class="copyright">
-                <!-- Container Starts -->
-                <div class="container">
-                    <div class="pull-right">@button@</div>
-                    <p itemscope itemtype="http://schema.org/Organization">© <span itemprop="name">@company@</span> @year@, {Тел}: <span itemprop="telephone">@telNum@</span>, <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{Адрес}: <span itemprop="streetAddress">@streetAddress@</span></span><span itemprop="email" class="hide">@adminMail@</span></p>
+            <form role="form" method="post" name="user_forma">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="login" class="form-control" placeholder="Email..." required="">
+                        <span class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>{Пароль}</label>
+                        <input type="password" name="password" class="form-control" placeholder="{Пароль}..." required="">
+                        <span class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="1" name="safe_users" @UserChecked@> {Запомнить}
+                        </label>
+                    </div>
+
+                    @facebookAuth@ @twitterAuth@
                 </div>
-                <!-- Container Ends -->
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary pull-left">{Войти}</button>
+                    <span class="pull-right"><a href="/users/sendpassword.html" class="btn btn-default">{Забыли}?</a>
+                    </span>
+                    <input type="hidden" value="1" name="user_enter">
+                </div>
+            </form>   
+        </div>
+    </div>
+</div>
+<!--/ Модальное окно авторизации-->
+
+<!-- Модальное окно мобильного поиска -->
+<div class="modal fade bs-example-modal-sm" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">{Поиск}</h4>
             </div>
-            <!-- Copyright Area Ends -->
-        </footer>
-        <!-- Footer Section Ends -->
+            <div class="modal-body">
+                <form  action="/search/" role="search" method="post">
+                    <div class="input-group">
+                        <input name="words" maxlength="50" class="form-control" placeholder="{Искать}.." required="" type="search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </form>
 
-        @editor@
-
-        <!-- Fixed mobile bar -->
-        <div class="bar-padding-fix visible-xs visible-sm"> </div>
-        <nav class="navbar navbar-default navbar-fixed-bottom bar bar-tab visible-xs visible-sm" role="navigation">
-            <a class="tab-item" href="/">
-                <span class="icon icon-home"></span>
-                <span class="tab-label">{Домой}</span>
-            </a>
-            <a class="tab-item @user_active@" @user_link@ data-target="#userModal">
-                <span class="icon icon-person"></span>
-                <span class="tab-label">{Кабинет}</span>
-            </a>
-            <a class="tab-item @cart_active@" href="/order/" id="bar-cart">
-                <span class="icon icon-download"></span> <span class="badge badge-positive" id="mobilnum">@cart_active_num@</span>
-                <span class="tab-label">{Корзина}</span>
-            </a>
-            <a class="tab-item" href="#" data-toggle="modal" data-target="#searchModal">
-                <span class="icon icon-search"></span>
-                <span class="tab-label">{Поиск}</span>
-            </a>
-        </nav>
-        <!--/ Fixed mobile bar -->
-
-        <!-- Notification -->
-        <div id="notification" class="success-notification" style="display: none;">
-            <div  class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-                <span class="notification-alert"> </span>
             </div>
         </div>
-        <!--/ Notification -->
+    </div>
+</div>
+<!--/ Модальное окно мобильного поиска -->
 
-        <!-- Модальное окно авторизации-->
-        <div class="modal fade bs-example-modal-sm" id="userModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title">{Авторизация}</h4>
-                        <span id="usersError" class="hide">@usersError@</span>
-                    </div>
-                    <form role="form" method="post" name="user_forma">
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" name="login" class="form-control" placeholder="Email..." required="">
-                                <span class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
-                            </div>
 
-                            <div class="form-group">
-                                <label>{Пароль}</label>
-                                <input type="password" name="password" class="form-control" placeholder="{Пароль}..." required="">
-                                <span class="glyphicon glyphicon-remove form-control-feedback hide" aria-hidden="true"></span>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="1" name="safe_users" @UserChecked@> {Запомнить}
-                                </label>
-                            </div>
-
-                            @facebookAuth@ @twitterAuth@
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary pull-left">{Войти}</button>
-                            <span class="pull-right"><a href="/users/sendpassword.html" class="btn btn-default">{Забыли}?</a>
-                            </span>
-                            <input type="hidden" value="1" name="user_enter">
-                        </div>
-                    </form>   
-                </div>
-            </div>
-        </div>
-        <!--/ Модальное окно авторизации-->
-
-        <!-- Модальное окно мобильного поиска -->
-        <div class="modal fade bs-example-modal-sm" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title">{Поиск}</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form  action="/search/" role="search" method="post">
-                            <div class="input-group">
-                                <input name="words" maxlength="50" class="form-control" placeholder="{Искать}.." required="" type="search">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--/ Модальное окно мобильного поиска -->
-
-        <!-- JQuery Plugins  -->
-        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/bootstrap.min.js"></script>
+<!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+<script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/vendor.min.js"></script>
+<script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/scripts.min.js"></script>
+<!-- JQuery Plugins  -->
+        <!-- <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/bootstrap.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/owl.carousel.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/unishop.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/bootstrap.offcanvas.min.js"></script>
-        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/bootstrap-select.min.js"></script>
-        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/phpshop.js"></script>
-        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery-ui.min.js"></script>
+        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/bootstrap-select.min.js"></script> -->
+        <!-- <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/phpshop.js"></script> -->
+        <!-- <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery-ui.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery.ui.touch-punch.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery.bxslider.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/jquery.cookie.js"></script>
@@ -465,5 +613,5 @@
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/inview.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery.maskedinput.min.js"></script>
         <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery.suggestions.min.js"></script>
-        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery.ui.touch-punch.min.js"></script>
+        <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery.ui.touch-punch.min.js"></script> -->
         @visualcart_lib@

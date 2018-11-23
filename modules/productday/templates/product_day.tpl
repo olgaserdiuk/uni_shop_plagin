@@ -31,7 +31,10 @@
     </div>
 </div>
 </div>
-<script >
+
+
+
+<!-- <script >
 
     $().ready(function() {
         
@@ -69,4 +72,4 @@
         }, 1000);
     });
 
-</script>
+</script> -->
