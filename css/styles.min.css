@@ -7169,19 +7169,19 @@ video {
 }
 
 .blog-post-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.3
 }
 
 .blog-post-title > a {
     transition: color .3s;
-    color: #404040;
+    color: #dc9814;
     text-decoration: none
 }
 
 .blog-post-title:hover > a {
-    color: #dc9814
+    color: #404040
 }
 
 .blog-post-thumb {

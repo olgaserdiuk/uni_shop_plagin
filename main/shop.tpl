@@ -14,10 +14,11 @@
     <link rel="icon" type="image/png" href="/favicon.png"> 
 
     <!-- Bootstrap -->
-    <!--  <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet"> -->
+   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
     <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
@@ -330,31 +331,19 @@
 <!-- Page Title-->
 <div class="page-title">
   <div class="container">
-    <h1>Корзина</h1>
-
-    @breadCrumbs@
-
+    <ul class="breadcrumbs">
+        @breadCrumbs@
+    </ul>
 </div>
 </div>
-
-
-        <!-- <div class="secondary-nav">
-            <div class="container">
-                <h1 class="shop-page-main-title"></h1>
-                <ol class="breadcrumb">
-                    @breadCrumbs@
-                </ol>
-            </div>
-        </div> -->
-
-
-
         <!-- Main Container Starts -->
-        <div class="middle-content shop-page  main-color-text">
-            <div class="container">
+        <div class="container padding-bottom-3x mb-1">
                 <div class="row">
-                    <div class="col-xs-12 col-md-3 main-sidebar-left">
-                        <div class="order-page-sidebar-user-block hidden-xs hidden-sm">
+                    <!-- Content-->
+                    <div class="col-lg-3 col-md-4 order-md-1">
+                        <div class="sidebar-toggle position-left"><i class="material-icons filter_list"></i></div>
+                        <aside class="sidebar sidebar-offcanvas position-left"><span class="sidebar-close"><i class="material-icons icon_close"></i></span>
+                        <!-- <div class="order-page-sidebar-user-block hidden-xs hidden-sm">
                             <h5 class="user-title">{Личный кабинет}</h5>
                             <ul class="user-list">
                                 <li><a href="/users/">@UsersLogin@</a></li>
@@ -363,34 +352,98 @@
                                 <li><a href="/users/message.html">{Связь с менеджерами}</a></li>
                                 @php if($_SESSION['UsersId']) echo '<li><a href="?logout=true">{Выйти}</a></li>'; php@
                             </ul>
-                        </div>
-                        <h3 class="side-heading hidden-xs hidden-sm">{Категории}</h3>
-                        <ul class="list-group sidebar-nav hidden-xs hidden-sm">
-                            @leftCatal@
+                        </div> -->
+                        <section class="widget widget-categories pt-0">
+                        <h3 class="widget-title">{Категории}</h3>
+                        <ul>
+
+<!-- 
+
+                <li class="has-children expanded"><a href="shop-boxed-ls.html#">Desks &amp; Benching</a><span>(1138)</span>
+                  <ul>
+                    <li><a href="shop-boxed-ls.html#">Executive Desks</a><span>(508)</span>
+                      <ul>
+                        <li><a href="shop-boxed-ls.html#">Standing Desks</a></li>
+                        <li><a href="shop-boxed-ls.html#">Benching Desks</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="shop-boxed-ls.html#">Single Desks</a><span>(423)</span>
+                      <ul>
+                        <li><a href="shop-boxed-ls.html#">Standing Desks</a></li>
+                        <li><a href="shop-boxed-ls.html#">Benching Desks</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="shop-boxed-ls.html#">File Cabinets</a><span>(97)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Office Chairs</a><span>(110)</span></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="shop-boxed-ls.html#">Lighting</a><span>(2356)</span>
+                  <ul>
+                    <li><a href="shop-boxed-ls.html#">Indoor Lights</a><span>(1032)</span>
+                      <ul>
+                        <li><a href="shop-boxed-ls.html#">Ceiling Lights</a></li>
+                        <li><a href="shop-boxed-ls.html#">Kitchen Lighting</a></li>
+                        <li><a href="shop-boxed-ls.html#">Wall Lights</a></li>
+                        <li><a href="shop-boxed-ls.html#">Lamps</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="shop-boxed-ls.html#">Outdoor Lights</a><span>(937)</span>
+                      <ul>
+                        <li><a href="shop-boxed-ls.html#">Light Stands</a></li>
+                        <li><a href="shop-boxed-ls.html#">Wall Lights</a></li>
+                        <li><a href="shop-boxed-ls.html#">Light Bulbs</a></li>
+                        <li><a href="shop-boxed-ls.html#">Lamps</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="shop-boxed-ls.html#">Dimmers &amp; Controls</a><span>(386)</span></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="shop-boxed-ls.html#">Storage Units</a><span>(420)</span>
+                  <ul>
+                    <li><a href="shop-boxed-ls.html#">Bookcases</a><span>(180)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Box Seats &amp; Benches</a><span>(132)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Cupboards</a><span>(47)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Caskets</a><span>(61)</span></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="shop-boxed-ls.html#">Furniture Accessories</a><span>(874)</span>
+                  <ul>
+                    <li><a href="shop-boxed-ls.html#">Cable &amp; Power Management</a><span>(211)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Desk Add Ons</a><span>(195)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Desk Risers</a><span>(159)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Lamps</a><span>(203)</span></li>
+                    <li><a href="shop-boxed-ls.html#">Monitor Arms</a><span>(106)</span></li>
+                  </ul>
+                </li> -->
+
+
+
+                @leftCatal@
                         </ul>
-                        <div class="hide" id="faset-filter">
-                            <h3 class="side-heading filter-title">{Фильтр товаров }<a href="?" id="faset-filter-reset" data-toggle="tooltip" data-placement="top" title="{Сбросить фильтр}"><span class="glyphicon glyphicon-remove"></span></a></h3>
-                            <div class="list-group filter-body-fix">
-                                <div id="faset-filter-body">{Загрузка}...</div>
-                                <div id="price-filter-body">
-                                    <h4>{Цена}</h4>
-                                    <form method="get" id="price-filter-form">
-                                        <div class="row">
-                                            <div class="col-md-6" id="price-filter-val-min">
-                                                <span>{от}</span>
-                                                <input type="text" class="form-control input-sm" name="min" value="@price_min@" > 
-                                            </div>
-                                            <div class="col-md-6" id="price-filter-val-max">
-                                                <span>{до}</span>
-                                                <input type="text" class="form-control input-sm" name="max" value="@price_max@"> 
-                                            </div>
-                                        </div>
-                                        <p></p>
-                                        <div id="slider-range"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
+
+                        <!-- Widget Price Range-->
+            <section class="widget widget-categories" id="price-filter-body">
+              <h3 class="widget-title">{Диапазон цен}</h3>
+              <form class="price-range-slider" method="post" data-start-min="600" data-start-max="1000" data-min=0 data-max="5000" data-step="1" id="price-filter-form">
+                <div class="ui-range-slider"></div>
+                <footer class="ui-range-slider-footer">
+                  <div class="column">
+                    <button class="btn btn-outline-primary btn-sm" type="submit" id="slider-range">Фильтр</button>
+                  </div>
+                  <div class="column">
+                    <div class="ui-range-values">
+                      <div class="ui-range-value-min" id="price-filter-val-min">{от }<span></span>
+                        <input type="hidden" name="min" value="@price_min@">
+                      </div>&nbsp;-&nbsp;
+                      <div class="ui-range-value-max" id="price-filter-val-max">{до }<span></span>
+                        <input type="hidden" name="max" value="@price_max@">
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </form>
+            </section>
                         <div class="menu-fix hidden-sm hidden-xs">
                             <h3 class="side-heading">{Полезная информация}</h3>
                             <div class="list-group sidebar-nav">
@@ -400,16 +453,16 @@
                             @leftMenu@
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-9 middle-content-fix">
+                    <div class="col-lg-9 col-md-8 order-md-2">
                         @DispShop@
                         @getPhotos@
                     </div>
 
-                    <div class="col-xs-12">
+                    <div class="col-lg-12 col-md-8 order-md-2">
                         <div class="banner-block">@banersDisp@</div>
                     </div>
                     
-                    <div class="col-xs-12 @php __hide('now_buying'); php@">
+                    <div class="col-lg-12 col-md-8 order-md-2 @php __hide('now_buying'); php@">
                         <h2 class="main-page-title">@now_buying@</h2>
                         <div class="owl-carousel nowBuy">
                             @nowBuy@
@@ -417,7 +470,7 @@
                     </div>
                     <!--  Primary Content Ends -->
                 </div>
-            </div>
+           
         </div>
         <!-- Main Container Ends -->
 

@@ -13,8 +13,15 @@
             @display_cart@
           </tbody>
         </table>
-    
+    <div class="column">
+          <form class="coupon-form my-3" method="post">
+            <input class="form-control form-control-sm" type="text" name="promocode" id="promocode" placeholder="Введите номер" required>
+            <button class="btn btn-outline-primary btn-sm" type="submit" onclick="UpdatePromotion()">Применить Промокод</button>
+            <input type="hidden" id="OrderSumma" name="OrderSumma" value="11500">
+          </form>
+        </div>
       <div class="shopping-cart-footer">
+
         <div class="column">
           <form class="coupon-form" method="post">
             <span class="order-page-top-label-left">{Скидка}:</span>

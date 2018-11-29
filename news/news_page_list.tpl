@@ -1,10 +1,6 @@
-
-<h1 class="page-title hide">{Новости}</h1>
-
-<div class="news-list">
+<div class="container padding-bottom-3x mb-1">
     <div class="row">
         @productPageDis@
     </div>
 </div>
-
 @productPageNav@

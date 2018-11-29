@@ -1,4 +1,1 @@
-<li><a href="/"></a>
-</li>
-<li class="separator"> / </li>
-<li></li>
+<li class="separator">&nbsp;/&nbsp;</li>

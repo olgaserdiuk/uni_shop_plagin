@@ -2,15 +2,16 @@
 @checkLabelForOldTemplatesNoDelete@
 @order_action_add@
 
+
 <!-- Form Starts -->
 <form class="form-horizontal" role="form" method="post" name="forma_order" id="forma_order" action="/done/">
     <div class="row">
-        
+
         <!-- Shipping & Shipment Block Starts -->
         <div class="col-sm-12">
             <div class="panel panel-smart">
-                <div class="alert alert-info alert-dismissible fade show padding-bottom-3x mb-1">
-                    
+                <div class="alert alert-info alert-dismissible fade show padding-bottom-3x mb-3">
+
                     <h3 class="ordernum pull-left">{Личные данные}</h3>
                     @noAuthAdr@
                     
@@ -19,7 +20,7 @@
                    <!--  <div class="panel-heading">
                        <h3 class="panel-title">{Личные данные}</h3>
                    </div> -->
-                   <div class="panel-body">
+                   <div class="panel-body clearfix">
                     <input type="hidden" name="ouid" value="@orderNum@" readonly="1">
                     <input type="hidden" value="@orderDate@"  readonly="1">
                     @authData@ 
@@ -27,12 +28,12 @@
                 </div>
             </div>
             <!-- Taxes Block Starts -->
-            <div class="panel panel-smart">
-                <div class="alert alert-info alert-dismissible fade show padding-bottom-3x mb-1">
+            <div class="panel panel-smart mt-3 clearfix">
+                <div class="alert alert-info alert-dismissible fade show padding-bottom-3x mb-3">
                     <h3 class="ordernum pull-left">{Доставка, адрес получателя}</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-6 col-lg-6 pull-left">
                         <div class="form-group">
                             <div class="col-md-12 radio">
                                 @orderDelivery@      
@@ -40,7 +41,7 @@
                         </div>
                         @UserAdresList@                            
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-6 col-lg-6 pull-right">
                         <div id="userAdresData">
                         </div>
                         <div class="form-group">
@@ -57,7 +58,7 @@
         <!-- Discount & Conditions Blocks Starts -->
         <div class="col-sm-12">
             <div class="panel panel-smart">
-                <div class="alert alert-info alert-dismissible fade show padding-bottom-3x mb-1">
+                <div class="alert alert-info alert-dismissible fade show padding-bottom-3x mb-3">
                     <h3 class="ordernum pull-left">{Способ оплаты}</h3>
                 </div>
                 <div class="panel-body">
