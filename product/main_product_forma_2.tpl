@@ -19,8 +19,8 @@
             </h4>
             <span class="product-sklad-list-block">@productSklad@</span>
             <div class="product-block-button">
-                <button class="btn btn-wishlist addToCompareList hidden-md" role="button" data-uid="@productUid@" data-title="{Сравнить}" data-placement="top" data-toggle="tooltip"><i class="fa fa-bar-chart-o"></i></button>
-                <button class="btn btn-wishlist addToWishList" role="button" data-uid="@productUid@" data-title="{Отложить}" data-placement="top" data-toggle="tooltip"><i class="feather iconz-heart"></i></button>
+                <button class="btn btn-wishlist addToCompareList hidden-md" role="button" data-uid="@productUid@" data-title="{Г‘Г°Г ГўГ­ГЁГІГј}" data-placement="top" data-toggle="tooltip"><i class="fa fa-bar-chart-o"></i></button>
+                <button class="btn btn-wishlist addToWishList" role="button" data-uid="@productUid@" data-title="{ГЋГІГ«Г®Г¦ГЁГІГј}" data-placement="top" data-toggle="tooltip"><i class="feather iconz-heart"></i></button>
                 <a class="btn btn-cart @elementCartOptionHide@" href="/shop/UID_@productUid@.html">
                     <span>@productSale@</span>
                 </a>
@@ -28,7 +28,7 @@
                     <span>@productSale@</span>
                 </button>
                 <a class="btn btn-cart @elementNoticeHide@" href="/users/notice.html?productId=@productUid@" title="@productNotice@">
-                    {Уведомить}
+                    {Г“ГўГҐГ¤Г®Г¬ГЁГІГј}
                 </a>
             </div>
         </div>

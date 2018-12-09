@@ -1,4 +1,4 @@
-<div class="col-md-4 col-sm-4 product-block-wrapper">
+<!-- <div class="col-md-4 col-sm-4 product-block-wrapper">
     <div class="product-block">
         <div class="product-block-top">
             <div class="product-block-image">
@@ -33,4 +33,44 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+
+
+
+            <!-- Item -->
+            <div class="col-lg-4 col-sm-6">
+              <div class="product-card mb-30">
+                <div class="product-card-thumb">
+                    @newtipIcon@
+                    @specIcon@ 
+                    <a class="product-card-link" href="/shop/UID_@productUid@.html" title="@productName@"></a>
+                    <img src="@productImg@" alt="@productName@">
+                  <div class="product-card-buttons">
+                    <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
+                    <button class="btn btn-primary btn-sm addToCartList @elementCartHide@" role="button" data-num="1" data-uid="@productUid@" data-cart="@productSaleReady@" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="успешно добавлено в корзину">@productSale@</button>
+                  </div>
+                </div>
+                <div class="product-card-details">
+                  <h3 class="product-card-title"><a href="/shop/UID_@productUid@.html" title="@productName@">@productName@</a></h3>
+                  <h4 class="product-card-price">
+                    <del>@productPriceRub@</del>@productPrice@<span class="rubznak">@productValutaName@</span>
+                  </h4>
+                 <!--  <span class="product-sklad-list-block">@productSklad@</span> -->
+                  <!-- <div class="product-block-button">
+                                  <button class="btn btn-wishlist addToCompareList hidden-md" role="button" data-uid="@productUid@" data-title="{Сравнить}" data-placement="top" data-toggle="tooltip"><i class="fa fa-bar-chart-o"></i></button>
+                                  <button class="btn btn-wishlist addToWishList" role="button" data-uid="@productUid@" data-title="{Отложить}" data-placement="top" data-toggle="tooltip"><i class="feather iconz-heart"></i></button>
+                                  <a class="btn btn-cart @elementCartOptionHide@" href="/shop/UID_@productUid@.html">
+                    <span>@productSale@</span>
+                                  </a>
+                                  <button type="button" class="btn btn-cart addToCartList @elementCartHide@" role="button" data-num="1" data-uid="@productUid@" data-cart="@productSaleReady@">              
+                    <span>@productSale@</span>
+                                  </button>
+                                  <a class="btn btn-cart @elementNoticeHide@" href="/users/notice.html?productId=@productUid@" title="@productNotice@">
+                    {Уведомить}
+                                  </a>
+                              </div> -->
+                </div>
+              </div>
+            </div>
+

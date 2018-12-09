@@ -21,7 +21,7 @@
         </div>
         <div class="category-card-info w-100">
           <!-- <h3 class="category-card-title">Seating</h3> -->
-          <h4 class="category-card-subtitle">Starting from $269.00</h4>
+          <!-- <h4 class="category-card-subtitle">Starting from $269.00</h4> -->
       </div>
   </a>
 </div>

@@ -1,7 +1,7 @@
 
 <style type="text/css">
 
-	.main-sidebar-left, .footer-payment-methods, .news-subscription-form, .copyright, #style-selector, .navbar-default, .navbar .tab-item {
+	.main-sidebar-left, .footer-payment-methods, .news-subscription-form, .copyright, #style-selector, .navbar-default, .navbar .tab-item, .order-md-1 {
 		display: none;
 	}
 	.printform {

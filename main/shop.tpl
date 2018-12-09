@@ -14,21 +14,21 @@
     <link rel="icon" type="image/png" href="/favicon.png"> 
 
     <!-- Bootstrap -->
-  <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- <link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/bootstrap.min.css" rel="stylesheet"> -->
    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
-    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
-    <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+   <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+   <link rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/vendor.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Main Template Styles-->
-    <link id="mainStyles" rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/styles.min.css">
+   <!-- Main Template Styles-->
+   <link id="mainStyles" rel="stylesheet" media="screen" href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@css/styles.min.css">
 
-    <!-- Modernizr-->
-    <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/modernizr.min.js"></script>
+   <!-- Modernizr-->
+   <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin']; php@/js/modernizr.min.js"></script>
 
 
 </head>
@@ -86,16 +86,16 @@
           <li class="">
               <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"><span>{Каталог}</span></a>
               <ul class="sub-menu" role="menu">
-                 @leftCatal@
-             </ul>
-         </li>
-         @topBrands@
-         @topMenu@
-     </ul>
-     <!-- </li> -->
- </nav>
- <!-- Toolbar-->
- <div class="toolbar">
+               @leftCatal@
+           </ul>
+       </li>
+       @topBrands@
+       @topMenu@
+   </ul>
+   <!-- </li> -->
+</nav>
+<!-- Toolbar-->
+<div class="toolbar">
     <div class="inner"><a class="toolbar-toggle mobile-menu-toggle" href="#mobileMenu"><i class="material-icons menu"></i></a><a class="toolbar-toggle search-toggle" href="#search"><i class="material-icons search"></i></a><a class="toolbar-toggle" href="#account"><i class="material-icons person"></i></a>
       <a class="toolbar-toggle" href="#cart">
         <i>
@@ -336,13 +336,13 @@
     </ul>
 </div>
 </div>
-        <!-- Main Container Starts -->
-        <div class="container padding-bottom-3x mb-1">
-                <div class="row">
-                    <!-- Content-->
-                    <div class="col-lg-3 col-md-4 order-md-1">
-                        <div class="sidebar-toggle position-left"><i class="material-icons filter_list"></i></div>
-                        <aside class="sidebar sidebar-offcanvas position-left"><span class="sidebar-close"><i class="material-icons icon_close"></i></span>
+<!-- Main Container Starts -->
+<div class="container padding-bottom-3x mb-1">
+    <div class="row">
+        <!-- Content-->
+        <div class="col-lg-3 col-md-4 order-md-1">
+            <div class="sidebar-toggle position-left"><i class="material-icons filter_list"></i></div>
+            <aside class="sidebar sidebar-offcanvas position-left"><span class="sidebar-close"><i class="material-icons icon_close"></i></span>
                         <!-- <div class="order-page-sidebar-user-block hidden-xs hidden-sm">
                             <h5 class="user-title">{Личный кабинет}</h5>
                             <ul class="user-list">
@@ -354,75 +354,57 @@
                             </ul>
                         </div> -->
                         <section class="widget widget-categories pt-0">
-                        <h3 class="widget-title">{Категории}</h3>
-                        <ul>
-
-<!-- 
-
-                <li class="has-children expanded"><a href="shop-boxed-ls.html#">Desks &amp; Benching</a><span>(1138)</span>
-                  <ul>
-                    <li><a href="shop-boxed-ls.html#">Executive Desks</a><span>(508)</span>
-                      <ul>
-                        <li><a href="shop-boxed-ls.html#">Standing Desks</a></li>
-                        <li><a href="shop-boxed-ls.html#">Benching Desks</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="shop-boxed-ls.html#">Single Desks</a><span>(423)</span>
-                      <ul>
-                        <li><a href="shop-boxed-ls.html#">Standing Desks</a></li>
-                        <li><a href="shop-boxed-ls.html#">Benching Desks</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="shop-boxed-ls.html#">File Cabinets</a><span>(97)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Office Chairs</a><span>(110)</span></li>
-                  </ul>
-                </li>
-                <li class="has-children"><a href="shop-boxed-ls.html#">Lighting</a><span>(2356)</span>
-                  <ul>
-                    <li><a href="shop-boxed-ls.html#">Indoor Lights</a><span>(1032)</span>
-                      <ul>
-                        <li><a href="shop-boxed-ls.html#">Ceiling Lights</a></li>
-                        <li><a href="shop-boxed-ls.html#">Kitchen Lighting</a></li>
-                        <li><a href="shop-boxed-ls.html#">Wall Lights</a></li>
-                        <li><a href="shop-boxed-ls.html#">Lamps</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="shop-boxed-ls.html#">Outdoor Lights</a><span>(937)</span>
-                      <ul>
-                        <li><a href="shop-boxed-ls.html#">Light Stands</a></li>
-                        <li><a href="shop-boxed-ls.html#">Wall Lights</a></li>
-                        <li><a href="shop-boxed-ls.html#">Light Bulbs</a></li>
-                        <li><a href="shop-boxed-ls.html#">Lamps</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="shop-boxed-ls.html#">Dimmers &amp; Controls</a><span>(386)</span></li>
-                  </ul>
-                </li>
-                <li class="has-children"><a href="shop-boxed-ls.html#">Storage Units</a><span>(420)</span>
-                  <ul>
-                    <li><a href="shop-boxed-ls.html#">Bookcases</a><span>(180)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Box Seats &amp; Benches</a><span>(132)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Cupboards</a><span>(47)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Caskets</a><span>(61)</span></li>
-                  </ul>
-                </li>
-                <li class="has-children"><a href="shop-boxed-ls.html#">Furniture Accessories</a><span>(874)</span>
-                  <ul>
-                    <li><a href="shop-boxed-ls.html#">Cable &amp; Power Management</a><span>(211)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Desk Add Ons</a><span>(195)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Desk Risers</a><span>(159)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Lamps</a><span>(203)</span></li>
-                    <li><a href="shop-boxed-ls.html#">Monitor Arms</a><span>(106)</span></li>
-                  </ul>
-                </li> -->
-
-
-
-                @leftCatal@
-                        </ul>
+                            <h3 class="widget-title">{Каталог}</h3>
+                            <ul>
+                                @leftCatal@
+                            </ul>
                         </section>
-
-                        <!-- Widget Price Range-->
+                        <!-- Widget Sorting-->
+                        <section class="widget widget-icon-list">
+                          <h3 class="widget-title">Sort By</h3>
+                          <ul>
+                            <li><a href="shop-boxed-ls.html#"><i class="material-icons sort"></i>Default</a></li>
+                            <li><a href="shop-boxed-ls.html#"><i class="material-icons favorite_border"></i>Popularity</a></li>
+                            <li><a href="shop-boxed-ls.html#"><i class="material-icons vertical_align_top"></i>Last entries</a></li>
+                            <li><a href="shop-boxed-ls.html#"><i class="material-icons star_border"></i>Average rating</a></li>
+                            <li><a href="shop-boxed-ls.html#"><i class="material-icons sort_by_alpha"></i>Alphabetically</a></li>
+                        </ul>
+                    </section>
+                    <!-- Widget Brand Filter-->
+                    <section class="widget">
+                      <h3 class="widget-title">Бренд @brand@</h3>
+                      <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="aspen">
+                        <label class="custom-control-label" for="aspen">Aspen Home&nbsp;<span class="text-muted">(254)</span></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="bernhardt">
+                        <label class="custom-control-label" for="bernhardt">Bernhardt&nbsp;<span class="text-muted">(39)</span></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="allen">
+                        <label class="custom-control-label" for="allen">Ethan Allen&nbsp;<span class="text-muted">(128)</span></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="harris">
+                        <label class="custom-control-label" for="harris">Henkle Harris&nbsp;<span class="text-muted">(310)</span></label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="flanigan">
+                        <label class="custom-control-label" for="flanigan">Raymour &amp; Flanigan&nbsp;<span class="text-muted">(42)</span></label>
+                    </div>
+                </section>
+                <!-- Widget Colors-->
+                <section class="widget widget-colors">
+                  <h3 class="widget-title">Filter by Color</h3>
+                  <ul>
+                    <li><a href="shop-boxed-ls.html#"><span class="color" style="background-color: #93c4ef;"></span>Blue</a></li>
+                    <li><a href="shop-boxed-ls.html#"><span class="color" style="background-color: #a7c04d;"></span>Green</a></li>
+                    <li><a href="shop-boxed-ls.html#"><span class="color" style="background-color: #ef0568;"></span>Red</a></li>
+                    <li><a href="shop-boxed-ls.html#"><span class="color" style="background-color: #ffce2b;"></span>Yellow</a></li>
+                </ul>
+            </section>
+            <!-- Widget Price Range-->
             <section class="widget widget-categories" id="price-filter-body">
               <h3 class="widget-title">{Диапазон цен}</h3>
               <form class="price-range-slider" method="post" data-start-min="600" data-start-max="1000" data-min=0 data-max="5000" data-step="1" id="price-filter-form">
@@ -430,102 +412,102 @@
                 <footer class="ui-range-slider-footer">
                   <div class="column">
                     <button class="btn btn-outline-primary btn-sm" type="submit" id="slider-range">Фильтр</button>
-                  </div>
-                  <div class="column">
+                </div>
+                <div class="column">
                     <div class="ui-range-values">
                       <div class="ui-range-value-min" id="price-filter-val-min">{от }<span></span>
                         <input type="hidden" name="min" value="@price_min@">
-                      </div>&nbsp;-&nbsp;
-                      <div class="ui-range-value-max" id="price-filter-val-max">{до }<span></span>
+                    </div>&nbsp;-&nbsp;
+                    <div class="ui-range-value-max" id="price-filter-val-max">{до }<span></span>
                         <input type="hidden" name="max" value="@price_max@">
-                      </div>
                     </div>
-                  </div>
-                </footer>
-              </form>
+                </div>
+            </div>
+        </footer>
+    </form>
+</section>
+<section class="widget widget-tags">
+              <h3 class="widget-title">{Полезная информация}</h3>
+              @pageCatal@
             </section>
-                        <div class="menu-fix hidden-sm hidden-xs">
-                            <h3 class="side-heading">{Полезная информация}</h3>
-                            <div class="list-group sidebar-nav">
-                                @pageCatal@
-                            </div>
-                            @rightMenu@
-                            @leftMenu@
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-8 order-md-2">
-                        @DispShop@
-                        @getPhotos@
-                    </div>
+<!-- <div div class="col-md-4 col-sm-6"> -->
+    @rightMenu@
+    @leftMenu@
+<!-- </div> -->
+</div>
+<div class="col-lg-9 col-md-8 order-md-2">
+    @DispShop@
+    @getPhotos@
+</div>
 
-                    <div class="col-lg-12 col-md-8 order-md-2">
+                    <!-- <div class="col-lg-12 col-md-8 order-md-2">
                         <div class="banner-block">@banersDisp@</div>
-                    </div>
+                    </div> -->
                     
                     <div class="col-lg-12 col-md-8 order-md-2 @php __hide('now_buying'); php@">
                         <h2 class="main-page-title">@now_buying@</h2>
-                        <div class="owl-carousel nowBuy">
+                        <!-- <div class="owl-carousel nowBuy"> -->
                             @nowBuy@
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <!--  Primary Content Ends -->
                 </div>
-           
-        </div>
-        <!-- Main Container Ends -->
 
-        <!-- Back To Top Button--><a class="scroll-to-top-btn" href="index.html#"><i class="material-icons trending_flat"></i></a>
+            </div>
+            <!-- Main Container Ends -->
 
-        <!-- Footer Section Starts -->
-        <footer class="site-footer">
-            <div class="column text-center">
-              <h3>{Контакты}</h3>
-              <ul>
-                <li class="footer-map">@streetAddress@</li>
-                <li class="footer-email"><a href="mailto:@adminMail@"><i class="fa fa-envelope-o"></i> @adminMail@</a></li>
-                <li class="footer-map">
-                    <h4 class="lead">
-                        <a href="tel:@telNum@">@telNum@</a>
-                    </h4>
-                </li>
-            </ul>
+            <!-- Back To Top Button--><a class="scroll-to-top-btn" href="index.html#"><i class="material-icons trending_flat"></i></a>
 
-            <a class="social-button vk-ic" role="button"  href="#" data-toggle="tooltip" data-placement="top" title="Поделиться ВКонтакте"><i class="fa fa-lg fa-vk"></i></a>
-            <a class="social-button sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
-              <i class="socicon-facebook"></i>
-          </a>
-          <a class="social-button sb-twitter" href="/" data-toggle="tooltip" data-placement="top" title="Twitter">
-              <i class="socicon-twitter"></i>
-          </a>
-          <p class="text-xxs text-muted mb-0 mt-3">© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by Kass</p>
-      </div>
-      <div class="column text-center">
-        <h3 class="widget-title text-center">{Личный кабинет}</h3>
-        <ul>
-            <li><a href="/users/order.html">{Отследить заказ}</a></li>
-            <li><a href="/users/notice.html">{Уведомления о товарах}</a></li>
-            <li><a href="/users/message.html">{Связь с менеджерами}</a></li>
-            @php if($_SESSION['UsersId']) echo '<li><a href="?logout=true">{Выйти}</a></li>'; php@
-        </ul>
-    </div>
-<div class="column text-center">
-    <h3 class="widget-title text-center">{Информация}</h3>
-    <ul>
-                    @topMenu@
-                    <li><a href="/page/politika_konfidencialnosti.html" title="{Политика конфиденциальности}">{Политика конфиденциальности}</a></li>
+            <!-- Footer Section Starts -->
+            <footer class="site-footer">
+                <div class="column text-center">
+                  <h3>{Контакты}</h3>
+                  <ul>
+                    <li class="footer-map">@streetAddress@</li>
+                    <li class="footer-email"><a href="mailto:@adminMail@"><i class="fa fa-envelope-o"></i> @adminMail@</a></li>
+                    <li class="footer-map">
+                        <h4 class="lead">
+                            <a href="tel:@telNum@">@telNum@</a>
+                        </h4>
+                    </li>
                 </ul>
-</div>
-<div class="column text-center">
-        <h3 class="widget-title text-center">{Навигация}</h3>
-        <ul>
-            <li><a href="/price/" title="{Прайс-лист}">{Прайс-лист}</a></li>
-            <li><a href="/news/" title="{Новости}">{Новости}</a></li>
-            <li><a href="/gbook/" title="{Отзывы}">{Отзывы}</a></li>
-            <li><a href="/map/" title="{Карта сайта}">{Карта сайта}</a></li>
-            <li><a href="/forma/" title="{Форма связи}">{Форма связи}</a></li>
-        </ul>
-    </div>
-</footer>
+
+                <a class="social-button vk-ic" role="button"  href="#" data-toggle="tooltip" data-placement="top" title="Поделиться ВКонтакте"><i class="fa fa-lg fa-vk"></i></a>
+                <a class="social-button sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                  <i class="socicon-facebook"></i>
+              </a>
+              <a class="social-button sb-twitter" href="/" data-toggle="tooltip" data-placement="top" title="Twitter">
+                  <i class="socicon-twitter"></i>
+              </a>
+              <p class="text-xxs text-muted mb-0 mt-3">© All rights reserved. Made with <i class='material-icons favorite text-danger'></i> by Kass</p>
+          </div>
+          <div class="column text-center">
+            <h3 class="widget-title text-center">{Личный кабинет}</h3>
+            <ul>
+                <li><a href="/users/order.html">{Отследить заказ}</a></li>
+                <li><a href="/users/notice.html">{Уведомления о товарах}</a></li>
+                <li><a href="/users/message.html">{Связь с менеджерами}</a></li>
+                @php if($_SESSION['UsersId']) echo '<li><a href="?logout=true">{Выйти}</a></li>'; php@
+            </ul>
+        </div>
+        <div class="column text-center">
+            <h3 class="widget-title text-center">{Информация}</h3>
+            <ul>
+                @topMenu@
+                <li><a href="/page/politika_konfidencialnosti.html" title="{Политика конфиденциальности}">{Политика конфиденциальности}</a></li>
+            </ul>
+        </div>
+        <div class="column text-center">
+            <h3 class="widget-title text-center">{Навигация}</h3>
+            <ul>
+                <li><a href="/price/" title="{Прайс-лист}">{Прайс-лист}</a></li>
+                <li><a href="/news/" title="{Новости}">{Новости}</a></li>
+                <li><a href="/gbook/" title="{Отзывы}">{Отзывы}</a></li>
+                <li><a href="/map/" title="{Карта сайта}">{Карта сайта}</a></li>
+                <li><a href="/forma/" title="{Форма связи}">{Форма связи}</a></li>
+            </ul>
+        </div>
+    </footer>
 
 
 
@@ -535,23 +517,23 @@
 
 
 
-<!-- Copyright Area Starts -->
-<div class="copyright">
-    <!-- Container Starts -->
-    <div class="container">
-        <div class="pull-right">@button@</div>
-        <p itemscope itemtype="http://schema.org/Organization">© <span itemprop="name">@company@</span> @year@, {Тел}: <span itemprop="telephone">@telNum@</span>, <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{Адрес}: <span itemprop="streetAddress">@streetAddress@</span></span><span itemprop="email" class="hide">@adminMail@</span></p>
-    </div>
-    <!-- Container Ends -->
-</div>
-<!-- Copyright Area Ends -->
+    <!-- Copyright Area Starts -->
+    <!-- <div class="copyright"> -->
+        <!-- Container Starts -->
+        <!-- <div class="container">
+            <div class="pull-right">@button@</div>
+            <p itemscope itemtype="http://schema.org/Organization">© <span itemprop="name">@company@</span> @year@, {Тел}: <span itemprop="telephone">@telNum@</span>, <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{Адрес}: <span itemprop="streetAddress">@streetAddress@</span></span><span itemprop="email" class="hide">@adminMail@</span></p>
+        </div> -->
+        <!-- Container Ends -->
+   <!--  </div> -->
+    <!-- Copyright Area Ends -->
 </footer>
 <!-- Footer Section Ends -->
 
 @editor@
 
 <!-- Fixed mobile bar -->
-<div class="bar-padding-fix visible-xs visible-sm"> </div>
+<!-- <div class="bar-padding-fix visible-xs visible-sm"> </div>
 <nav class="navbar navbar-default navbar-fixed-bottom bar bar-tab visible-xs visible-sm" role="navigation">
     <a class="tab-item" href="/">
         <span class="icon icon-home"></span>
@@ -569,7 +551,7 @@
         <span class="icon icon-search"></span>
         <span class="tab-label">{Поиск}</span>
     </a>
-</nav>
+</nav> -->
 <!--/ Fixed mobile bar -->
 
 <!-- Notification -->

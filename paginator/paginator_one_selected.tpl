@@ -1,1 +1,1 @@
-<li id="paginator-@paginPageNumber@" class="active"><a class="invarseColor" href="@paginLink@">@paginPageNumber@</a></li>
+<li id="paginator-@paginPageNumber@" class="active"><a href="@paginLink@">@paginPageNumber@</a></li>

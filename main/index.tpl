@@ -455,7 +455,7 @@ special<!DOCTYPE html>
                   <div class="gallery-item video-btn text-center">
 
 
-                    <video width="200" height="150" controls="controls">
+                    <video width="200" height="150" controls="controls" poster="images/cup.png" ng-style="{'background-image': 'url(https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_413,w_620/v1511341785/aj4hskt889iwejlngdha.jpg)'}">
                      <source src="images/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                      </video>
                      <!-- <a href="index.html#" data-type="video" data-video="&lt;div class=&quot;wrapper&quot;&gt;&lt;div class=&quot;video-wrapper&quot;&gt;&lt;iframe class=&quot;pswp__video&quot; width=&quot;960&quot; height=&quot;640&quot; src=&quot;https://player.vimeo.com/video/67001156?color=dc9814&amp;title=0&amp;byline=0&amp;portrait=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;"></a> -->

@@ -1,5 +1,5 @@
 <!-- Item-->
-<div class="col-xl-3 col-lg-4 col-sm-6">
+<div class="col-xl-3 col-lg-3 col-sm-6">
   <div class="product-card mb-30">
     <div class="product-card-thumb">
       <span class="product-rating text-warning">

@@ -5,7 +5,7 @@
 @catalogContent@
 
 <!-- Product Filter Starts -->
-<div class="product-filter" id="filter-well">
+<!-- <div class="product-filter" id="filter-well">
     <div class="row">
         <div class="col-md-6 hidden-xs">
             <div class="display">
@@ -48,10 +48,11 @@
 <form method="post" action="/shop/CID_@productId@@nameLat@.html" name="sort" id="sorttable" class="hide">
     <table><tr>@vendorDisp@<td>@vendorSelectDisp@</td></tr></table>
 </form>                      
-</div>
+</div> -->
 <!-- Product Filter Ends -->
 
-<div class="template-product-list products-list">@productPageDis@</div>
+<!-- Products Grid-->
+    <div class="row mb-2">@productPageDis@</div>
 
 <div id="ajaxInProgress"></div>
 <div class="product-scroll-init"></div>
